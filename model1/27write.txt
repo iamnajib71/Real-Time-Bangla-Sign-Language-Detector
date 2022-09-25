@@ -1,0 +1,25 @@
+train_set/27/IMG_9338.png---------- wrong////////////// 20
+train_set/27/IMG_9534.png---------- wrong////////////// 15
+train_set/27/IMG_5342.png---------- wrong////////////// 20
+train_set/27/IMG_9582.png---------- wrong////////////// 20
+train_set/27/IMG_8976.png---------- wrong////////////// 10
+train_set/27/HR0_0290.png---------- wrong////////////// 20
+train_set/27/HR0_0487.png---------- wrong////////////// 20
+train_set/27/DSC_1445.png---------- 27
+train_set/27/IMG_9631.png---------- wrong////////////// 9
+train_set/27/IMG_9477.png---------- wrong////////////// 20
+train_set/27/IMG_9164.png---------- wrong////////////// 20
+train_set/27/IMG_9117.png---------- wrong////////////// 20
+train_set/27/DSC_1572.png---------- wrong////////////// 20
+train_set/27/IMG_9252.png---------- wrong////////////// 20
+train_set/27/IMG_9297.png---------- wrong////////////// 20
+train_set/27/IMG_5442.png---------- wrong////////////// 20
+train_set/27/IMG_9685.png---------- wrong////////////// 20
+train_set/27/IMG_5392.png---------- wrong////////////// 20
+train_set/27/IMG_9070.png---------- wrong////////////// 20
+train_set/27/HR0_0533.png---------- wrong////////////// 31
+train_set/27/IMG_9384.png---------- wrong////////////// 15
+train_set/27/DSC_1646.png---------- wrong////////////// 33
+train_set/27/IMG_9431.png---------- wrong////////////// 20
+train_set/27/IMG_5489.png---------- wrong////////////// 20
+train_set/27/IMG_9024.png---------- wrong////////////// 20
