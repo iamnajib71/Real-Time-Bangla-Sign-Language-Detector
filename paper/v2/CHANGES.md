@@ -14,3 +14,5 @@ Every table is generated from reports/*/metrics.json and per_class.csv. paper/v2
 - Added the separate signer-ID-disjoint bounded sentence experiment, false accepts, test-reuse disclosure, call companion and optional temporal neural model. No general-translation claim.
 
 - Patch release: verified the real video-file selection flow, added a media-clock sampling regression test, and added pipeline, validation-history and temporal confusion figures. The original v2.0.0 release/tag remains unchanged.
+
+- Academic presentation: removed draft/revision running labels and author-upload instructions from the manuscript; standardised black clickable citations, punctuated section numbers, descriptive experiment names and numbered figure/table captions. Added a separate copy-ready ScienceOpen revision guide. All numerical evidence and the original v1 are unchanged.

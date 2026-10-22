@@ -1,31 +1,34 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=25mm]{geometry}
 \usepackage{graphicx,booktabs,amsmath,hyperref,fancyhdr}
-\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
-\pagestyle{fancy}\fancyhf{}\fancyhead[L]{Bangla Sign Lab: reproducibility revision}\fancyhead[R]{Revision draft}\fancyfoot[C]{\thepage}
+\hypersetup{hidelinks,pdftitle={Bangla Sign Language Gesture Recognition},pdfauthor={Nazmul Hassan}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small Bangla Sign Language Gesture Recognition}\fancyfoot[C]{\thepage}
 \setlength{\emergencystretch}{2em}\setlength{\headheight}{14pt}\setlength{\parskip}{6pt}\setlength{\parindent}{0pt}
-\title{Bangla Sign Language Gesture Recognition System:\\A Reproducible CNN Re-run and Public-Data Baseline}
-\author{Nazmul Hassan\\North South University, Bangladesh (B.Sc. thesis, 2022)\\\small ORCID: 0000-0001-6116-017X}
-\date{Reproducibility revision draft; not peer-reviewed}
+\title{Bangla Sign Language Gesture Recognition:\\Static Image Classification and Bounded Sentence Recognition}
+\author{Nazmul Hassan\\North South University, Dhaka, Bangladesh\\\small ORCID: 0000-0001-6116-017X\\\small \href{mailto:iam.najib@yahoo.com}{iam.najib@yahoo.com}}
+\date{\small Preprint}
+
 \renewcommand{\topfraction}{.9}\renewcommand{\textfraction}{.05}\renewcommand{\floatpagefraction}{.85}
-\renewcommand{\topfraction}{.9}\renewcommand{\textfraction}{.05}\renewcommand{\floatpagefraction}{.85}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname.\quad}
+\makeatother
 \begin{document}\maketitle
 \begin{abstract}
-This revision reports a reproducible reconstruction of a static Bangla hand-sign classifier derived from a 2022 undergraduate thesis. The surviving Python architecture is retrained once, while a frozen MobileNetV2 classifier provides a modest comparison. A separate current experiment uses the openly licensed KU-BdSL USLD collection; its grouped label space is kept distinct from the historical dataset. All results are reproduced measurements, with fixed seeded partitions, content audits, class metrics, confusion matrices and prediction-level evidence. The historical CNN obtains 3.38\% on 148 held-out images; the frozen comparison obtains 52.70\% on the same split. The separate public-data model obtains 99.58\% on 240 held-out images. These image-level tests do not establish unseen-signer performance. The software accepts images and recorded files as well as cameras, and a fixture-video test verifies the pipeline without camera hardware. A separate exploratory ten-sentence classifier recognises 6 of ten supported test clips and rejects 8 of ten background clips. The work does not establish continuous language translation, and the paper explicitly separates preserved historical claims from reproducible contemporary evidence.
+This study evaluates static Bangla hand-sign classification and exploratory recognition of a bounded sentence vocabulary, extending an undergraduate thesis system. The surviving Python architecture is retrained once, while a frozen MobileNetV2 classifier provides a modest comparison. A separate experiment uses the openly licensed KU-BdSL USLD collection; its grouped label space is kept distinct from the historical dataset. Evaluation uses fixed seeded partitions, content audits, class metrics, confusion matrices and prediction-level evidence. The historical CNN obtains 3.38\% on 148 held-out images; the frozen comparison obtains 52.70\% on the same split. The separate public-data model obtains 99.58\% on 240 held-out images. These image-level tests do not establish unseen-signer performance. The software accepts images and recorded files as well as cameras, and a fixture-video test verifies the pipeline without camera hardware. A separate exploratory ten-sentence classifier recognises 6 of ten supported test clips and rejects 8 of ten background clips. The results support constrained recognition experiments; continuous translation and performance with new signers require further evaluation.
 \end{abstract}
 \section{Introduction}
-Accessible communication tools require reliable evidence as well as working interfaces. A recogniser for a small set of hand configurations may support a constrained input experiment, but it does not capture the movement, context and grammar of a natural sign language. This project therefore evaluates static class prediction, rather than claiming a general translator.
+Accessible communication tools require reliable evidence as well as working interfaces. A recogniser for a small set of hand configurations may support a constrained input experiment, but it does not capture the movement, context and grammar of a natural sign language. We evaluate static class prediction and a separate, bounded sentence-recognition task.
 
-The original preprint appeared in 2022 on ScienceOpen and was not peer-reviewed~\cite{hassan}. Its methods narrative and the surviving code differ. This revision preserves that document, identifies the executable method, and adds a traceable code and model release. The present contribution is reproducibility and implementation quality, not a claim of a novel neural architecture or a new record on a public benchmark.
+The original system was described in a ScienceOpen preprint~\cite{hassan}. Differences between its methods narrative and the surviving implementation motivate an explicit reconstruction of the executable CNN. This study contributes audited data partitions, reproducible model comparisons, class-level error analysis and an exploratory temporal model. The original preprint is retained unchanged; the additional experiments are reported separately.
 
 \section{Related work and scope}
 The KU-BdSL authors provide an openly available collection designed for Bengali consonant recognition~\cite{kubdsl}. The accompanying versioned dataset offers an explicit licence and documented collection conditions~\cite{kudata}. It is useful here because its class layout can be downloaded, hashed and audited without treating an undocumented image bundle as an independent benchmark.
 
-MobileNetV2 introduces inverted residuals and linear bottlenecks for efficient vision models~\cite{mobilenet}. Here it is used only as an established, frozen ImageNet feature extractor. A small new classifier is learned on top. No claim is made that this older backbone represents the latest architecture, that it has been tuned optimally for Bangla signs, or that its scores are directly comparable with results from other papers.
+MobileNetV2 introduces inverted residuals and linear bottlenecks for efficient vision models~\cite{mobilenet}. Here it is used only as an established, frozen ImageNet feature extractor. A small new classifier is learned on top. Its frozen-backbone configuration provides a controlled, computationally economical transfer-learning baseline.
 
-These distinctions matter when rebuilding an old project. Replacing a historical dataset with a newer one changes both the data distribution and the output task. This revision consequently reports a historical-data comparison and a separate public-data experiment. A higher public-data score, if observed, would not constitute a direct improvement over the 2022 system.
+The historical and public collections have different image distributions and label spaces. We therefore compare architectures within the historical split and report the public-data experiment separately; cross-dataset score differences cannot isolate architectural improvement.
 \section{Data and provenance}
-The historical repository contains 1,005 labelled images in each of three representations: Gray, Resized and Otsu\_again. They are not independent collections. The re-run uses Gray only; the other copies are excluded from training and evaluation. Its 36 numeric folder labels inherit a provisional display mapping from the old interface. The duplicate vowel shown for class 6 in that interface is mapped to O; expert verification remains outstanding. Numeric class identifiers are used in the quantitative tables to avoid hiding this limitation.
+The historical repository contains 1,005 labelled images in each of three representations: Gray, Resized and Otsu\_again. They are not independent collections. The re-run uses Gray only; the other copies are excluded from training and evaluation. Its 36 numeric folder labels inherit a provisional display mapping from the original interface. The duplicate vowel for class 6 is assigned a provisional display correction; expert verification remains outstanding. Quantitative evaluation retains the original numeric identifiers.
 
 The historical paper describes constrained camera capture and hand cropping, but the repository supplies no verified signer identifiers, capture-session identifiers or participant-consent documentation. This revision therefore does not assert a verified count of individual historical signers. It also does not infer the collection of depth data merely from a prose claim when the available image pipeline does not expose such measurements.
 
@@ -44,9 +47,7 @@ The partition is image-level. Although the public dataset documents multiple par
 \section{Shared preprocessing}
 All inputs are resized to $128\times128$ pixels using nearest-neighbour interpolation. Colour frames are converted from OpenCV BGR to grayscale, and Otsu thresholding produces a binary image. Pixel values are divided by 255 and a single channel is retained. The same function is used by training, evaluation, the CLI and the desktop interface. There is no separate preprocessing path that could silently change the input scale at deployment.
 
-The surviving training script specifies 128-pixel inputs despite the historical paper's discussion of 64-pixel images. This revision follows the code for the CNN re-run and states the difference. Hand localisation is not implemented: the supplied image or frame must already be a suitable hand crop.
-
-
+The surviving training script specifies 128-pixel inputs despite the historical paper's discussion of 64-pixel images. This revision follows the code for the CNN re-run and states the difference. The static classifier requires a suitable hand crop; automatic hand localisation is outside this image-classification pipeline.
 
 \begin{figure}[!ht]\centering
 \includegraphics[width=\textwidth]{figures/pipeline.pdf}
@@ -64,7 +65,6 @@ This is a small transfer baseline, not an architecture-only ablation: pretrainin
 
 Python, TensorFlow, Keras, OpenCV and other direct dependencies are pinned. TensorFlow random seeds and deterministic operations are enabled, and CPU execution is used. Environment metadata and model hashes accompany every experiment. A fixed seed improves repeatability within an environment; it does not guarantee bit-identical floating-point results across all processors and library versions.
 
-
 \begin{figure}[!ht]\centering
 \includegraphics[width=\textwidth]{figures/validation-curves.pdf}
 \caption{\small Unsmoothed validation histories from the saved runs. Panels (a) and (b) show all 12 image-training epochs. Panel (c) shows all 80 temporal epochs and the checkpoint selected using U7 validation. Test clips are not plotted or used for checkpoint selection. Training accuracy is omitted because the historical logger records the last batch rather than an epoch aggregate.}\label{fig:curves}
@@ -73,12 +73,18 @@ Python, TensorFlow, Keras, OpenCV and other direct dependencies are pinned. Tens
 \section{Metrics}
 Test predictions are obtained once by argmax of each output distribution. Accuracy is the number correct divided by test support. Per-class precision, recall and F1 are reported with support; undefined values are set to zero. The confusion matrices contain raw counts and use the saved class order. Softmax outputs are presented as uncalibrated scores, never as a validated probability of correctness.
 
-\section{Reproduction results}
-\begin{center}\resizebox{\textwidth}{!}{\input{results-table.tex}}\end{center}
-The historical comparison measures two models on the same image-level split. The public-data row uses a different collection and grouped label space and should be interpreted separately. None of these rows is a recovered thesis figure. The historical CNN's measured outcome is retained without replacing it with an aspirational or published number. One seed and one run per configuration do not establish robustness or a confidence interval over training variability.
+\section{Static classification results}
+\begin{table}[!ht]\centering
+\caption{Static classification on fixed image-level test partitions. Historical models share one split; KU-BdSL is a separate task.}\label{tab:static}
+\resizebox{\textwidth}{!}{\input{results-table.tex}}
+\end{table}
+The historical comparison measures two models on the same image-level split. The public-data row uses a different collection and grouped label space and should be interpreted separately. These are additional experimental measurements, reported independently of the original preprint's accuracy statements. One seed and one run per configuration do not establish robustness or a confidence interval over training variability.
 
-\begin{center}\includegraphics[width=.78\textwidth]{figures/original-confusion.png}\end{center}
-\textbf{Historical CNN confusion matrix.} Rows are actual folder IDs and columns are predicted folder IDs. The matrix is generated directly from held-out predictions. Its exact values are also committed as CSV. Concentration in a small number of columns indicates class collapse or poor discrimination; such outcomes must be reported as observed rather than repaired by relabelling predictions after viewing the test set.
+\begin{figure}[!ht]\centering
+\includegraphics[width=.78\textwidth]{figures/original-confusion.png}
+\caption{Historical CNN confusion matrix for 148 test images. Rows denote actual folder IDs and columns denote predicted IDs; entries are raw counts.}\label{fig:historical-confusion}
+\end{figure}
+Figure~\ref{fig:historical-confusion} shows held-out predictions; the raw counts are available as CSV. Concentration in a small number of prediction columns indicates poor discrimination across the historical classes.
 
 The public-data and historical tasks differ in image quality, class definitions, collection conditions and support per class. Cross-dataset score differences cannot isolate the effects of better software, representation learning or sample size. No comparison with a literature accuracy claim is used as evidence of improvement.
 
@@ -89,37 +95,39 @@ The following are the complete per-class precision (P), recall (R), F1 and suppo
 \begin{minipage}[t]{.51\textwidth}\centering\renewcommand{\arraystretch}{.90}\textbf{Public-data MobileNetV2}\\[5pt]\footnotesize\input{ku-mobilenet-classes.tex}\end{minipage}
 
 \vspace{10pt}The transfer comparison's complete 36-class table is distributed as \path{reports/mobilenet/per_class.csv}. The public matrix appears below; its axis labels are numeric Unicode/group IDs rather than inferred letter names.
-\begin{center}\includegraphics[height=3.6cm]{figures/ku-mobilenet-confusion.png}\end{center}
+\begin{figure}[!ht]\centering
+\includegraphics[width=.85\textwidth]{figures/ku-mobilenet-confusion.png}
+\caption{KU-BdSL MobileNetV2 confusion matrix for 240 test images in 30 grouped classes. Rows are actual IDs and columns predicted IDs.}\label{fig:public-confusion}
+\end{figure}
 
 \section{Error analysis and qualitative evidence}
+\begin{figure}[!ht]\centering
 \begin{minipage}{.45\textwidth}\centering\includegraphics[height=3.2cm]{correct.png}\ Actual ID 2433; predicted 2433.\\ Score 100.0\%.\end{minipage}\hfill
 \begin{minipage}{.45\textwidth}\centering\includegraphics[height=3.2cm]{incorrect.png}\ Actual ID 2462; predicted 2486-2488-2487.\\ Score 25.5\%.\end{minipage}\hfill
+\caption{A correct and an incorrect held-out KU-BdSL prediction. Scores are uncalibrated softmax outputs. Images: Jim et al., KU-BdSL v4, CC BY 4.0; resized derivatives.}\label{fig:examples}
+\end{figure}
 
 The examples above are the first correct and first incorrect public test predictions in the saved manifest, when each exists. Their source paths and full scores are stored in \texttt{examples.json}. Both originate from held-out images; they are illustrations rather than a random sample or an estimate of error frequency. Dataset credit: Jim, Rafi, Akon, Biswas and Nahid, KU-BdSL v4, CC BY 4.0. Images are resized derivatives.
 
 Errors can be inspected at class level through recall and at prediction level through the complete results page. Low recall means many members of a class were missed; low precision means predictions assigned to that class frequently belonged elsewhere. The released audit shows every test image and score, including failures, so readers can investigate competing hand configurations and background effects without relying on a few chosen successful screenshots.
 
 The evidence does not establish a causal explanation for any individual error. Similar handshapes, threshold sensitivity, cropping and limited samples are plausible hypotheses for further investigation, not experimentally isolated causes. The binary preprocessing discards colour and texture; this may remove useful information and may interact poorly with features pretrained on natural colour images. An RGB baseline would be a useful future experiment, but it was not measured in this revision.
-\section{Software validation and camera-free demonstration}
-Unit tests check a known bimodal Otsu threshold, tensor shape and range, invalid image decoding and prediction from a real Keras fixture model. A command-line end-to-end test decodes an eight-frame synthetic MJPG video and checks every output label and frame index. The PyQt5 test runs offscreen and processes both an image and the fixture video through the same predictor. Fixture patterns and model weights are deliberately synthetic and are never included in sign-recognition accuracy claims.
+\section{Implementation and software validation}
+The Python implementation provides command-line and PyQt5 interfaces for images, recorded video and cameras. Automated tests cover Otsu preprocessing, tensor contracts, image decoding, Keras prediction and video inference. Synthetic image and video fixtures test software behaviour independently of sign-recognition accuracy. Recorded-file sampling follows media timestamps, and tracking state resets between inputs.
 
-The 30-second showcase is a still-image slideshow, not footage of continuous signing. A deterministic selection includes successes and failures where available, and every overlay contains the predicted character/group, actual label and uncalibrated confidence. The static-image showcase does not measure continuous signing or real-time latency; a separate bounded completed-clip experiment is reported below. This distinction prevents a file-processing demonstration from being mistaken for evidence of robust live recognition.
+The desktop video-input flow was also tested with a supported clip, a background false accept and a cropped BRAC tutorial greeting. The supported clip was recognised correctly; both unsupported inputs produced incorrect supported captions, including a coffee-related sentence for the greeting. Suggestions required confirmation before transcript insertion. No weights or thresholds were adjusted after these checks. The first two clips were previously evaluated examples, so this test measures integration consistency rather than new recognition accuracy. A separate letter-composition demonstration uses selected correctly classified held-out images; it is not continuous signing.
 
-
-The desktop file-selection handler was additionally exercised with a real supported test clip and a background false accept; decoded suggestions matched the saved predictions, and both required confirmation before transcript insertion. A cropped user-supplied tutorial greeting was falsely mapped to a supported coffee-related sentence instead of rejected. This failed out-of-vocabulary stress input exposes a remaining recognition risk; no weights or thresholds were adjusted after inspecting it. The chooser return is automated, while decoding, landmarks and neural inference are real. Recorded-file sampling now follows media timestamps rather than wall-clock playback speed, and tracking state resets between files. These checks verify software behaviour, not a new recognition benchmark.
 \section{Moving-phrase feasibility experiment}
 The supplied Grameenphone and BRAC tutorials demonstrate moving words and sentences, which differ from isolated alphabet signs. A separate CPU prototype extracts upper-body and hand landmarks from signer crops, normalises coordinates using the shoulders, and compares resampled sequences with dynamic time warping. Printed caption pixels are not model features; they are used only to annotate reference and test intervals manually. Ten phrases have one reference example each from the first tutorial. The second tutorial contains a different signer and supplies four supported and eight unsupported test segments.
 
 With a distance threshold of 0.20 and a relative margin of 0.10 specified before evaluation, the prototype recognises 1 of four supported phrases and rejects 4 of eight unsupported segments. These are tiny, manually segmented feasibility measurements, not continuous-transcription accuracy or a public-use validation. Its streaming preview and unknown state are software functions; they do not remedy the poor observed cross-signer result. More labelled examples, separate validation signers, representative unknown gestures and sign-language expert review are required before deployment.
 
-The distinct letter-spelling demonstration decodes a generated video and forms a Bengali sentence from stable isolated-letter predictions with vowel-composition rules. Its examples are deliberately selected correctly predicted held-out images. It proves the text-entry pipeline for those inputs, not spontaneous signing recognition. The code, segment annotations and complete temporal test errors are supplied separately from the static image metrics.
+Segment annotations and temporal errors are reported separately from the static image metrics.
 
 \subsection{Bounded sentence model}
 A follow-up experiment uses 100 selected clips from the public Ban-Sign-Sent-9K-V1 repository (\url{https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1}). Ten text-diverse target sentences and ten background sentence types were selected before recognition outcomes. Encoded signer IDs U4/U5/U6 supply 60 training clips; U7 supplies 20 validation clips; U19 supplies 20 test clips. There is one clip per sentence and ID. Identity and consent were not independently verified, and the inspected dataset card has no explicit licence; source footage is not redistributed.
 
 An 11-class GRU classifier (64 units, dropout 0.3, dense 32, softmax including background) uses 32-step motion/shape landmark sequences, Adam 0.001, batch 8, 80 epochs, temporal warp/noise augmentation and seed 2026. Validation selects the checkpoint and rejection threshold, with DTW as an alternative backend. The selected GRU obtains 6/10 supported captions correct and rejects 8/10 background clips on U19; 6 of 10 accepted captions are correct. The two false accepts illustrate the danger of confident captions. Background sentence types occur in training, so rejection does not establish novel-utterance detection. An earlier conservative baseline rejected all clips; its U19 outcome was already observed before this follow-up, which is exploratory rather than a wholly blind confirmation. Full clip-level predictions, class metrics and confusion counts accompany the code. Automatic sentence boundaries and general conversation translation remain unevaluated.
-
-
 
 \begin{figure}[!ht]\centering
 \includegraphics[width=.85\textwidth]{figures/sentence-confusion.pdf}
@@ -127,17 +135,17 @@ An 11-class GRU classifier (64 units, dropout 0.3, dense 32, softmax including b
 \end{figure}
 
 \section{Limitations, ethics and accessibility}
-Commercial use would require a Deaf-user-led task definition, resolved data permissions and consent, fresh signer/session-disjoint evaluation, novel unsupported utterances, continuous-signing boundary/error analysis and measured call latency. The current exploratory results do not establish these requirements. The repository records an explicit validation roadmap rather than a deployment-readiness claim.
+Deployment evaluation requires Deaf-user-led task design, resolved data permissions and consent, independent signers and sessions, novel unsupported utterances, continuous-signing error analysis and measured end-to-end latency. These remain open research and validation requirements.
 
-Small test supports make class metrics unstable. Neither dataset permits a verified signer-disjoint partition in the layout used here, and capture-condition dependence can inflate image-level results. Historical annotations and their display mapping require expert review. The static classifier has no explicit unknown-sign, no-hand or out-of-distribution rejection class; the separate temporal background class does not solve arbitrary unknown recognition. A high softmax score can still be wrong.
+Small test supports make class metrics unstable. Neither static-image dataset permits a verified signer-disjoint partition in the layout used here, and capture-condition dependence can inflate image-level results. Historical annotations and their display mapping require expert review. The static classifier has no explicit unknown-sign, no-hand or out-of-distribution rejection class; the separate temporal background class does not solve arbitrary unknown recognition. A high softmax score can still be wrong.
 
 KU-BdSL version 4 provides a documented CC BY 4.0 licence and participant-consent statement. That documentation does not transfer to the historical thesis images, whose consent records are absent. The software's MIT licence does not relicense third-party datasets. No unlicensed face video is incorporated. Historical paper text and figures remain under their original licence, and unchanged v1 is supplied for comparison.
 
 An accessibility claim would require evaluation with Bangla Sign Language users, including variation in signing practice, mobility, lighting, skin tone and camera access. This project has not performed such a study. Static alphabet classification is a constrained research exercise and should not be presented as a replacement for interpreters or a complete communication service.
 \section{Code and data availability}
-Code, pinned requirements, manifests, predictions and tests are available at \url{https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector}. Versioned models, matching label maps and checksums are provided with release \texttt{v2.0.1}: \url{https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/tag/v2.0.1}. The public-data downloader retrieves KU-BdSL v4 directly from its publisher and verifies each supplied SHA256. The thesis tag preserves the historical files without rewriting Git history. Overleaf users should upload the contents of \texttt{paper/v2} and compile \texttt{main.tex}; the project is self-contained.
+Code, pinned requirements, manifests, predictions and tests are available at \url{https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector}. Versioned models, matching label maps and checksums are provided with release \texttt{v2.0.1}: \url{https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/tag/v2.0.1}. The public-data downloader retrieves KU-BdSL v4 directly from its publisher and verifies each supplied SHA256. KU-BdSL v4 is available from its publisher~\cite{kudata} under CC BY 4.0. The historical image records and split manifests are preserved in the repository, although original consent documentation is unavailable. Ban-Sign-Sent source clips remain with the original provider; their reuse permissions are unresolved, and those clips are not redistributed.
 \section{Changes from version 1}
-Version 1 is retained verbatim. This revision adds a reproducible code link, identifies the surviving CNN instead of merging incompatible method descriptions, records new data audits and split manifests, reports only newly reproduced metrics, adds a separate public-data transfer baseline, and documents errors, software validation and ethical limits. It does not reinterpret the original aspirational accuracy statement as a measured result. It does not claim to reproduce the described sparse-autoencoder, depth or MATLAB procedures from unavailable executable evidence. This remains a non-peer-reviewed preprint draft. The author must upload it as a new version of the same ScienceOpen preprint; no new DOI or venue is claimed here.
+The original preprint is unchanged. This version specifies the executable CNN and its differences from the earlier method description; adds audited partitions, model-release links, per-class metrics and error analysis; and reports separate public-data and bounded sentence-recognition experiments. Original accuracy statements are not treated as results of these experiments. Sparse-autoencoder, depth and MATLAB procedures described previously are not reproduced because corresponding executable evidence is unavailable.
 \begin{thebibliography}{9}\small
 \bibitem{hassan} N. Hassan. Bangla Sign Language Gesture Recognition System: Using CNN Model. ScienceOpen Preprints, 2022. Non-peer-reviewed. DOI: \href{https://doi.org/10.14293/S2199-1006.1.SOR-.PPUF56Q.v1}{10.14293/S2199-1006.1.SOR-.PPUF56Q.v1}.
 \bibitem{kubdsl} A. A. J. Jim, I. Rafi, M. Z. Akon, U. Biswas and A.-A. Nahid. KU-BdSL: An open dataset for Bengali sign language recognition. Data in Brief 51, 109797, 2023. DOI: \href{https://doi.org/10.1016/j.dib.2023.109797}{10.1016/j.dib.2023.109797}.
