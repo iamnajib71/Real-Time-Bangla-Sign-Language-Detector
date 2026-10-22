@@ -27,9 +27,13 @@ def main():
     call('PUT',API+'/topics',json={'names':['computer-vision','deep-learning','tensorflow','opencv','sign-language','bangla','accessibility','cnn']})
     response=client.get(API+'/releases/tags/'+args.tag,timeout=30)
     if response.status_code==404:
-        release=call('POST',API+'/releases',json={'tag_name':args.tag,'name':'Bangla Sign Language Detector '+args.tag+' - reproducible edition',
-            'target_commitish':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-            'body':Path('docs/RELEASE.md').read_text(encoding='utf-8'),'draft':True,'prerelease':False})
+        # Unpublished drafts may not resolve through the tag endpoint yet.
+        release=next((r for r in call('GET',API+'/releases',params={'per_page':100})
+                      if r['tag_name']==args.tag and r['draft']),None)
+        if release is None:
+            release=call('POST',API+'/releases',json={'tag_name':args.tag,'name':'Bangla Sign Language Detector '+args.tag+' - reproducible edition',
+                'target_commitish':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+                'body':Path('docs/RELEASE.md').read_text(encoding='utf-8'),'draft':True,'prerelease':False})
     else:
         response.raise_for_status(); release=response.json()
     files=[]
@@ -56,7 +60,7 @@ def main():
             call('POST',upload,params={'name':path.name},headers={'Content-Type':'application/octet-stream'},data=stream)
         print('Uploaded '+path.name,flush=True)
     if args.draft:
-        print('Draft assets prepared: '+release['html_url'],flush=True)
+        print(('Draft assets prepared: ' if release['draft'] else 'Published assets verified: ')+release['html_url'],flush=True)
         return
     release=call('PATCH',API+'/releases/'+str(release['id']),json={'draft':False})
     print('Published '+release['html_url'],flush=True)
