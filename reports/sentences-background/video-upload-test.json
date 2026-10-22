@@ -1,0 +1,61 @@
+[
+  {
+    "case": "supported-correct",
+    "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U19_20230706_1688653207413.mp4",
+    "sha256": "5f4fdbff6f3f53990a8fbcb5e750ec725bf30a990c176fd3e28a645807631f08",
+    "expected_caption": "রাতে খেয়েছেন?",
+    "suggested_caption": "রাতে খেয়েছেন?",
+    "correct": true,
+    "source_url": null,
+    "segment_seconds": null,
+    "roi": null,
+    "interpretation": "saved test example",
+    "decoded_frames": 262,
+    "transcript_before_confirmation": "",
+    "transcript_after_confirmation": "রাতে খেয়েছেন?",
+    "matches_saved_prediction": true,
+    "test_type": "real file selection handler, decoder, landmarks, exported GRU and confirm action; file chooser return automated"
+  },
+  {
+    "case": "background-false-accept",
+    "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U19_20231018_1697642413332.mp4",
+    "sha256": "f8f1a67fd6a6bd94d5b1b56d5b88ffb174f745ed2fcf17e8b9e9a7ecbae3ee83",
+    "expected_caption": "মা মাংস খান না।",
+    "suggested_caption": "চাচা সকালে মাংস খেতেন না।",
+    "correct": false,
+    "source_url": null,
+    "segment_seconds": null,
+    "roi": null,
+    "interpretation": "saved test example",
+    "decoded_frames": 136,
+    "transcript_before_confirmation": "",
+    "transcript_after_confirmation": "চাচা সকালে মাংস খেতেন না।",
+    "matches_saved_prediction": true,
+    "test_type": "real file selection handler, decoder, landmarks, exported GRU and confirm action; file chooser return automated"
+  },
+  {
+    "case": "provided-brac-hello",
+    "path": "tmp\\upload-brac-hello.avi",
+    "sha256": "1289a027c1451a9de8c252ba1d035b349b395bbc51058ba35887b08d65ca2115",
+    "expected_caption": "হ্যালো",
+    "suggested_caption": "দাদা বিকালে কফি খায়নি।",
+    "correct": false,
+    "source_url": "https://www.youtube.com/watch?v=k6bnLa4YluI",
+    "segment_seconds": [
+      0.8,
+      5.8
+    ],
+    "roi": [
+      0.3,
+      0,
+      0.85,
+      1
+    ],
+    "interpretation": "unsupported greeting should be rejected",
+    "decoded_frames": 125,
+    "transcript_before_confirmation": "",
+    "transcript_after_confirmation": "দাদা বিকালে কফি খায়নি।",
+    "matches_saved_prediction": null,
+    "test_type": "real file selection handler, decoder, landmarks, exported GRU and confirm action; file chooser return automated"
+  }
+]

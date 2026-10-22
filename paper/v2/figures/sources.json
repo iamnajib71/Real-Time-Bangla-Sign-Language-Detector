@@ -1,0 +1,8 @@
+{
+  "reports/original/history.json": "c8c637f2f6eb35a4070aa6a38e0539015003791c56c25d3e883f7d0a74928dbc",
+  "reports/mobilenet/history.json": "8f3870c15aa42d1153b7b52ff1bdd3aa095826d363c9c68346876829f5a240ee",
+  "reports/ku-mobilenet/history.json": "9cd174ffc6bef25dc0571094734dd3d9bc49d24050f8902ebaf7ad7402ae13c9",
+  "reports/sentences-background/validation.json": "b20b017663f36ab9a250144f3107f470eba3ab6084dcc546c9722233cc85ab85",
+  "reports/sentences-background/frozen-config.json": "63aee9e0518c04c4876b6444aa57ed353ae5c8fcd0460fc79f39fffcdb3d159b",
+  "reports/sentences-background/confusion_matrix.csv": "8dc5a999e84cad345847892b37d4b71291ad90bf2923eb616a8d5f564edb2f05"
+}

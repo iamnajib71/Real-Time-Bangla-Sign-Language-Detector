@@ -11,7 +11,7 @@ API='https://api.github.com/repos/'+REPO
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--tag',default='v2.0.0')
+    parser.add_argument('--tag',default='v2.0.1')
     args=parser.parse_args()
     result=subprocess.run(['git','credential','fill'],input='protocol=https\nhost=github.com\n\n',
                           capture_output=True,text=True,check=True)
@@ -26,7 +26,7 @@ def main():
     call('PUT',API+'/topics',json={'names':['computer-vision','deep-learning','tensorflow','opencv','sign-language','bangla','accessibility','cnn']})
     response=client.get(API+'/releases/tags/'+args.tag,timeout=30)
     if response.status_code==404:
-        release=call('POST',API+'/releases',json={'tag_name':args.tag,'name':'Bangla Sign Language Detector 2.0 - reproducible edition',
+        release=call('POST',API+'/releases',json={'tag_name':args.tag,'name':'Bangla Sign Language Detector '+args.tag+' - reproducible edition',
             'target_commitish':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
             'body':Path('docs/RELEASE.md').read_text(encoding='utf-8'),'draft':True,'prerelease':False})
     else:
@@ -35,7 +35,8 @@ def main():
     for experiment in ['original','mobilenet','ku-mobilenet']:
         files += [Path('models')/(experiment+'.keras'),Path('models')/(experiment+'.labels.json')]
     files += [Path('models/legacy-model1.h5'),Path('paper/v2/main.pdf'),
-              Path('models/sentences-background.keras'),Path('models/sentences-background.json')]
+              Path('models/sentences-background.keras'),Path('models/sentences-background.json'),
+              Path('tmp/overleaf-source.zip')]
     checksums={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files}
     checksum_file=Path('models/SHA256SUMS.txt')
     checksum_file.write_text(''.join(f'{v}  {k}\n' for k,v in checksums.items()),encoding='utf-8')

@@ -1,0 +1,96 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "check": "Python",
+      "ok": true,
+      "detail": "3.12.14"
+    },
+    {
+      "check": "tensorflow",
+      "ok": true,
+      "detail": "installed 2.20.0; expected 2.20.0"
+    },
+    {
+      "check": "keras",
+      "ok": true,
+      "detail": "installed 3.15.1; expected 3.15.1"
+    },
+    {
+      "check": "opencv-contrib-python",
+      "ok": true,
+      "detail": "installed 4.12.0.88; expected 4.12.0.88"
+    },
+    {
+      "check": "numpy",
+      "ok": true,
+      "detail": "installed 2.2.6; expected 2.2.6"
+    },
+    {
+      "check": "pillow",
+      "ok": true,
+      "detail": "installed 11.3.0; expected 11.3.0"
+    },
+    {
+      "check": "h5py",
+      "ok": true,
+      "detail": "installed 3.14.0; expected 3.14.0"
+    },
+    {
+      "check": "scikit-learn",
+      "ok": true,
+      "detail": "installed 1.7.2; expected 1.7.2"
+    },
+    {
+      "check": "matplotlib",
+      "ok": true,
+      "detail": "installed 3.10.6; expected 3.10.6"
+    },
+    {
+      "check": "PyQt5",
+      "ok": true,
+      "detail": "installed 5.15.11; expected 5.15.11"
+    },
+    {
+      "check": "requests",
+      "ok": true,
+      "detail": "installed 2.32.5; expected 2.32.5"
+    },
+    {
+      "check": "mediapipe",
+      "ok": true,
+      "detail": "installed 0.10.32; expected 0.10.32"
+    },
+    {
+      "check": "Static model SHA256",
+      "ok": true,
+      "detail": "ku-mobilenet.keras"
+    },
+    {
+      "check": "Static label contract",
+      "ok": true,
+      "detail": "30 outputs; 30 labels"
+    },
+    {
+      "check": "pose_landmarker_lite.task",
+      "ok": true,
+      "detail": "Run python scripts/download_motion_models.py if missing or corrupt"
+    },
+    {
+      "check": "hand_landmarker.task",
+      "ok": true,
+      "detail": "Run python scripts/download_motion_models.py if missing or corrupt"
+    },
+    {
+      "check": "Sentence model SHA256",
+      "ok": true,
+      "detail": "Run python scripts/download_sentence_model.py if missing or corrupt"
+    },
+    {
+      "check": "Sentence configuration",
+      "ok": true,
+      "detail": "Configuration matches frozen measured experiment"
+    }
+  ],
+  "scope": "Installation and artifact integrity only; this does not certify recognition accuracy or camera compatibility"
+}

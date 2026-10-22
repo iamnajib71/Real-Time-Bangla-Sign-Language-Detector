@@ -12,11 +12,11 @@ I built a Bangla hand-sign recognition system for my B.Sc. thesis, with reproduc
 |---|---|
 | **The problem** | Bangla sign language users lack accessible real-time recognition tools, adding friction when communicating with people who do not sign. This project explores a small static-letter classification task. |
 | **What I built** | I built a current TensorFlow/Keras pipeline, compared a CNN with a transfer-learning baseline, and connected the same predictor to image, video, camera and PyQt5 inputs. |
-| **Results** | Public KU-BdSL experiment: **99.58% test accuracy on 240 held-out images across 30 grouped classes**. 22 software tests passed locally. These are Reproduction results; signer-independent performance is unmeasured. |
+| **Results** | Public KU-BdSL experiment: **99.58% test accuracy on 240 held-out images across 30 grouped classes**. 28 automated tests passed in CPU CI. These are Reproduction results; signer-independent performance is unmeasured. |
 | **Skills shown** | Python, OpenCV, TensorFlow/Keras, CNN, computer vision, PyQt5, reproducible experiments, data analysis, pytest, GitHub Actions. |
 | **Relevant roles** | Junior ML/AI Engineer, Data Analyst, Junior Data Scientist, Software Engineer. |
 | **How it was built** | I designed the workflow, implemented the rebuild and reviewed the measured results; CPU CI checks the shared prediction pipeline. |
-| **Try it / evidence** | [Quick start](#quick-start), [results](docs/RESULTS.md), [complete prediction page](docs/ku-mobilenet-results.html), [raw evidence](reports/), [release](https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/tag/v2.0.0). |
+| **Try it / evidence** | [Quick start](#quick-start), [results](docs/RESULTS.md), [complete prediction page](docs/ku-mobilenet-results.html), [raw evidence](reports/), [release](https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/tag/v2.0.1). |
 
 The animation is a **30-second slideshow of held-out hand images**, with selected correct and incorrect predictions. It is not a natural-signing video or proof of continuous language translation. [Open the full results page](docs/ku-mobilenet-results.html) locally in a browser to inspect every test example.
 
@@ -126,6 +126,20 @@ The linked Grameenphone and BRAC tutorials contain moving sentence signs. A sepa
 Run `python -m bsl gui` for the camera/video preview, editable Bengali transcript and separate caption window. Share that window in your call app. Screenshot text is manually entered to illustrate the controls.
 
 The optional temporal model supports ten complete sentences: **6/10 supported sentences correct; 8/10 background clips rejected; 10 accepted captions with 60% precision** on a separate dataset signer ID. This small exploratory test does not establish general-call transcription. Suggestions require confirmation. [Setup, exact vocabulary and full errors](docs/SENTENCES.md) · [Call workflow](docs/CALL-COMPANION.md).
+
+## Video-upload test and scientific figures
+
+The actual **Open video** flow was checked with a supported held-out clip, a false-match clip, and the supplied BRAC greeting. The test records the observed suggestions and confirms that captions require user confirmation. [Upload test, screenshots and errors](docs/VIDEO-UPLOAD-TEST.md) · [Raw evidence](reports/sentences-background/video-upload-test.json).
+
+The manuscript includes a pipeline diagram, unsmoothed validation curves, static and temporal confusion matrices, and correct/incorrect examples. [Training curves](paper/v2/figures/validation-curves.png) · [Sentence confusion matrix](reports/sentences-background/confusion_matrix.png).
+
+For future commercial use, [the scientific validation plan](docs/SCIENTIFIC-ROADMAP.md) sets out Deaf-user involvement, data permissions, independent signer/session tests, novel unsupported inputs, continuous-signing errors and end-to-end latency. These are requirements still to be met, not claimed achievements.
+
+## Run and test on Windows
+
+From the repository folder, run `setup.bat` once to install the pinned dependencies and verified model assets. Then double-click `run-app.bat`. Use **Open video**, select a complete supported signing clip, and choose **Sentence vocabulary (experimental)** for the temporal model. Use **Supported phrases** to check its ten-sentence vocabulary. Suggestions require confirmation; typing and corrections remain available.
+
+Run `python -m bsl doctor --motion` to verify pinned dependencies, model checksums, label order and tracking assets without importing TensorFlow or opening a camera. Run `run-tests.bat` for the camera-free automated suite. The local source-video integration check is `python scripts/test_video_upload.py`; it requires the local source clips described in the test report. Those third-party videos are not bundled with the repository.
 
 ## Project structure
 

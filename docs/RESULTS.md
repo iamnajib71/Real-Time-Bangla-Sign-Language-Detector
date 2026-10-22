@@ -16,7 +16,7 @@ The original CNN uses the architecture in `v2022-thesis:ishara.py`, including th
 
 Each experiment directory has inventory, split, label order, training history, per-class CSV, confusion matrix CSV/PNG, every test prediction, model SHA256 and runtime metadata. Accuracy is computed once from argmax predictions on the untouched test partition. Undefined per-class metrics are set to zero; support is shown. Training accuracy is diagnostic logging and is not the reported test metric.
 
-22 software tests passed locally. See `reports/tests.xml`. The CI workflow runs on CPU; remote workflow status must be checked on GitHub separately. The synthetic fixture model proves plumbing, not sign recognition quality.
+28 automated tests passed in CPU CI. See `reports/ci-tests.xml` and the recorded CI run in `reports/ci-verification.json` when present. The synthetic fixture model proves plumbing, not sign recognition quality.
 
 ## Interpretation
 

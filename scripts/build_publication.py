@@ -5,7 +5,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 REPO='https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector'
-RELEASE=REPO+'/releases/tag/v2.0.0'
+RELEASE=REPO+'/releases/tag/v2.0.1'
 
 def load(experiment,file='metrics.json'):
     return json.loads((Path('reports')/experiment/file).read_text(encoding='utf-8'))
@@ -13,7 +13,9 @@ def load(experiment,file='metrics.json'):
 def main():
     runs={x:load(x) for x in ['original','mobilenet','ku-mobilenet']}
     audits={x:load(x,'inventory.json') for x in runs}
-    test=ET.parse('reports/tests.xml').getroot()
+    test_file='reports/ci-tests.xml' if Path('reports/ci-tests.xml').exists() else 'reports/tests.xml'
+    test_context='CPU CI' if 'ci-tests' in test_file else 'local verification'
+    test=ET.parse(test_file).getroot()
     suites=[test] if test.tag=='testsuite' else list(test)
     tests=sum(int(s.get('tests',0)) for s in suites)
     failures=sum(int(s.get('failures',0))+int(s.get('errors',0)) for s in suites)
@@ -37,7 +39,7 @@ The original CNN uses the architecture in `v2022-thesis:ishara.py`, including th
 
 Each experiment directory has inventory, split, label order, training history, per-class CSV, confusion matrix CSV/PNG, every test prediction, model SHA256 and runtime metadata. Accuracy is computed once from argmax predictions on the untouched test partition. Undefined per-class metrics are set to zero; support is shown. Training accuracy is diagnostic logging and is not the reported test metric.
 
-{tests} software tests passed locally. See `reports/tests.xml`. The CI workflow runs on CPU; remote workflow status must be checked on GitHub separately. The synthetic fixture model proves plumbing, not sign recognition quality.
+{tests} automated tests passed in {test_context}. See `{test_file}` and the recorded CI run in `reports/ci-verification.json` when present. The synthetic fixture model proves plumbing, not sign recognition quality.
 
 ## Interpretation
 
@@ -60,7 +62,7 @@ I built a reproducible Bangla hand-sign recognition project to explore more acce
 |---|---|
 | **The problem** | Bangla sign language users lack accessible real-time recognition tools, adding friction when communicating with people who do not sign. This project explores a small static-letter classification task. |
 | **What I built** | I built a current TensorFlow/Keras pipeline, compared a CNN with a transfer-learning baseline, and connected the same predictor to image, video, camera and PyQt5 inputs. |
-| **Results** | Public KU-BdSL experiment: **{public['accuracy']:.2%} test accuracy on {public['test_n']} held-out images across {public['classes']} grouped classes**. {tests} software tests passed locally. These are 2026 re-run results; signer-independent performance is unmeasured. |
+| **Results** | Public KU-BdSL experiment: **{public['accuracy']:.2%} test accuracy on {public['test_n']} held-out images across {public['classes']} grouped classes**. {tests} automated tests passed in {test_context}. These are 2026 re-run results; signer-independent performance is unmeasured. |
 | **Skills shown** | Python, OpenCV, TensorFlow/Keras, CNN, computer vision, PyQt5, reproducible experiments, data analysis, pytest, GitHub Actions. |
 | **Relevant roles** | Junior ML/AI Engineer, Data Analyst, Junior Data Scientist, Software Engineer. |
 | **How it was built** | I designed the workflow, implemented the rebuild and reviewed the measured results; CPU CI checks the shared prediction pipeline. |
@@ -187,7 +189,7 @@ Code: MIT. Public dataset and thumbnails: CC BY 4.0, credited to the KU-BdSL aut
 
 2026 re-run results: original CNN {original['accuracy']:.2%} on {original['test_n']} thesis test images; frozen MobileNetV2 {mobile['accuracy']:.2%} on the same split; separate KU-BdSL USLD MobileNetV2 experiment {public['accuracy']:.2%} on {public['test_n']} images. These are image-level tests, not unseen-signer benchmarks. See reports for every prediction, class metric and model hash.
 
-CLI image, folder, recorded-video and camera inputs; PyQt5 desktop client; {tests} passing local tests including fixture-video end-to-end inference; CPU CI workflow; 30-second held-out image demo; failure audit; unchanged v1 preprint and an 8-page v2 manuscript draft for author review/upload.
+CLI image, folder, recorded-video and camera inputs; PyQt5 desktop client; {tests} passing automated tests in {test_context} including fixture-video end-to-end inference; CPU CI workflow; 30-second held-out image demo; failure audit; unchanged v1 preprint and a v2 manuscript draft for author review/upload.
 
 Download a .keras file with its matching .labels.json. Default: ku-mobilenet.keras. Model hashes are in SHA256SUMS.txt and the committed reports. legacy-model1.h5 is archived for provenance only: its historic output mapping is uncertain. The paper PDF is a draft, not a new published version.\n''',encoding='utf-8')
     build_paper(runs,audits)

@@ -1,6 +1,10 @@
 import argparse
 import json
 import sys
+# Keep the health check usable when native vision/ML imports are broken or slow.
+if __name__=='__main__' and len(sys.argv)>1 and sys.argv[1]=='doctor':
+    from .doctor import main as doctor_main
+    sys.exit(doctor_main(sys.argv[2:]))
 from .predict import Predictor, DEFAULT_MODEL
 from .media import frames
 
@@ -9,8 +13,9 @@ def main(argv=None):
     if argv and argv[0]=='doctor':
         from .doctor import main as doctor
         return doctor(argv[1:])
-    parser = argparse.ArgumentParser(description='Static Bangla sign classifier (crop hands before input)')
+    parser = argparse.ArgumentParser(description='Bangla sign research app: images, video, camera and setup diagnostics')
     sub = parser.add_subparsers(dest='command', required=True)
+    sub.add_parser('doctor',help='Check dependency versions and model integrity')
     for command in ('predict', 'webcam', 'gui'):
         p = sub.add_parser(command)
         p.add_argument('--model', default=str(DEFAULT_MODEL))

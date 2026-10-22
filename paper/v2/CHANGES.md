@@ -12,3 +12,5 @@
 Every table is generated from reports/*/metrics.json and per_class.csv. paper/v2/numbers.json records the exact source values used by the manuscript generator. Examples originate from the saved test predictions.
 
 - Added the separate signer-ID-disjoint bounded sentence experiment, false accepts, test-reuse disclosure, call companion and optional temporal neural model. No general-translation claim.
+
+- Patch release: verified the real video-file selection flow, added a media-clock sampling regression test, and added pipeline, validation-history and temporal confusion figures. The original v2.0.0 release/tag remains unchanged.

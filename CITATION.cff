@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Cite this software and the original non-peer-reviewed preprint separately."
 title: "Bangla Sign Language Detector: reproducible research and captioning prototype"
 type: software
-version: 2.0.0
+version: 2.0.1
 authors:
   - family-names: Hassan
     given-names: Nazmul

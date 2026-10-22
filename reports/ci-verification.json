@@ -1,0 +1,9 @@
+{
+  "conclusion": "success",
+  "head_sha": "3cfd7972778157fcf8b62f90ad7951e013a1afd3",
+  "run_id": 39803402045,
+  "tests": 28,
+  "url": "https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/actions/runs/39803402045",
+  "report": "reports/ci-tests.xml",
+  "artifact_sha256": "e4c7f91f718f59ad20041a70623acb3c54b56d84d084abcabd28b38368babe5c"
+}
