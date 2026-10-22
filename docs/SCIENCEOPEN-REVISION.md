@@ -86,7 +86,7 @@ These match the four references in the manuscript. Remove the unrelated example 
 
 ## Thumbnail
 
-An optional suitable image is the project-authored pipeline diagram in `paper/v2/figures/pipeline.png`. Do not use unlicensed tutorial faces. The pasted form warns that choosing a thumbnail can clear text fields, so choose it before pasting metadata.
+Upload `assets/scienceopen-thumbnail.png`, a dedicated 1536 x 1024 PNG cover. This is an illustrative cover generated with the built-in image tool, not an experimental figure or an authenticated sign diagram. The generation prompt is saved in `docs/thumbnail-prompt.txt`. It uses no source-video faces or accuracy claims. The project-authored pipeline in `paper/v2/figures/pipeline.png` is also available as an alternative. The pasted form warns that choosing a thumbnail can clear text fields, so choose it before pasting metadata.
 
 ## PDF for tracked changes
 
