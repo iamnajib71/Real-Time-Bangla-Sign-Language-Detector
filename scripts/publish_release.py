@@ -12,6 +12,7 @@ API='https://api.github.com/repos/'+REPO
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--tag',default='v2.0.1')
+    parser.add_argument('--draft',action='store_true',help='Prepare assets without publishing')
     args=parser.parse_args()
     result=subprocess.run(['git','credential','fill'],input='protocol=https\nhost=github.com\n\n',
                           capture_output=True,text=True,check=True)
@@ -46,11 +47,17 @@ def main():
         if path.name in uploaded:
             if uploaded[path.name]['size']!=path.stat().st_size:
                 raise ValueError('Existing asset has unexpected size: '+path.name)
+            digest=uploaded[path.name].get('digest')
+            if digest and digest!='sha256:'+hashlib.sha256(path.read_bytes()).hexdigest():
+                raise ValueError('Existing asset checksum differs: '+path.name)
             continue
         upload=release['upload_url'].split('{')[0]
         with path.open('rb') as stream:
             call('POST',upload,params={'name':path.name},headers={'Content-Type':'application/octet-stream'},data=stream)
         print('Uploaded '+path.name,flush=True)
+    if args.draft:
+        print('Draft assets prepared: '+release['html_url'],flush=True)
+        return
     release=call('PATCH',API+'/releases/'+str(release['id']),json={'draft':False})
     print('Published '+release['html_url'],flush=True)
 

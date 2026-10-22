@@ -11,7 +11,7 @@ def main():
     args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
     metadata=json.loads((root/'reports'/args.experiment/'model.json').read_text())
-    base='https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/download/v2.0.0/'
+    base='https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/download/v2.0.1/'
     target=root/'models'; target.mkdir(exist_ok=True)
     for name in [metadata['file'],Path(metadata['file']).with_suffix('.labels.json').name]:
         response=requests.get(base+name,timeout=180); response.raise_for_status()

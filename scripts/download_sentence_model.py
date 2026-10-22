@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import requests
 
-base='https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/download/v2.0.0/'
+base='https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/download/v2.0.1/'
 prefix='sentences-background'
 root=Path(__file__).resolve().parents[1]
 expected=json.loads((root/'reports'/prefix/'test-results.json').read_text(encoding='utf-8'))['model_sha256']
