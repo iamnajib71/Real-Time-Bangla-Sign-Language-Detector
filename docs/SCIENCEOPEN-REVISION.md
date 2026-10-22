@@ -90,7 +90,7 @@ Upload `assets/scienceopen-thumbnail.png`, a dedicated 1536 x 1024 PNG cover. Th
 
 ## PDF for tracked changes
 
-The clean manuscript is not a tracked-changes PDF. This task produced a clean revised PDF and textual revision notes, not a marked comparison against v1. If the field is mandatory, a separate marked comparison is still needed before submission; do not present the clean PDF or CHANGES.md as tracked changes.
+Upload `paper/v2/tracked-changes.pdf` in this field (19 pages, approximately 1.62 MB; below the 10 MB limit). Part A reproduces the revised manuscript with added/replaced text underlined in blue; Part B reproduces the original with removed/replaced text struck through in red. The cover explains that this is an automated PDF-text comparison, including extraction and reordering limitations. Figures remain visible in each version; their pixels are not diffed. Markup is embedded in page content for reliable previews. The original and clean revised PDFs are unchanged. Source checksums and comparison details are in `paper/v2/tracked-changes.json`; `scripts/build_tracked_changes.py` rebuilds the comparison using PyMuPDF. Upload the clean `paper/v2/main.pdf` in the main Content field.
 
 ## Submission declarations
 
