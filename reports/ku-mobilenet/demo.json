@@ -1,0 +1,23 @@
+{
+  "duration_seconds": 30.0,
+  "frames": 12,
+  "test_images": 240,
+  "selected_test_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    96,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "correct_selected": 11,
+  "incorrect_selected": 1,
+  "type": "held-out still-image slideshow; not natural signing video",
+  "attribution": "KU-BdSL v4, USLD. Abdullah Al Jaid Jim, Ibrahim Rafi, Md. Zahid Akon, Uzzal Biswas and Abdullah-Al Nahid (2023). DOI: 10.17632/scpvm2nbkm.4. CC BY 4.0. Thumbnails resized; prediction overlays added."
+}

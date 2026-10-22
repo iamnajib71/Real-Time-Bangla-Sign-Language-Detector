@@ -1,0 +1,23 @@
+{
+  "duration_seconds": 30.0,
+  "frames": 12,
+  "test_images": 148,
+  "selected_test_indices": [
+    90,
+    91,
+    92,
+    93,
+    94,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "correct_selected": 5,
+  "incorrect_selected": 7,
+  "type": "held-out still-image slideshow; not natural signing video",
+  "attribution": "Original thesis hand crops, Nazmul Hassan (2022). Thumbnails resized; prediction overlays added. See data/original/README.md for provenance limits."
+}

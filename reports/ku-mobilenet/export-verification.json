@@ -1,0 +1,7 @@
+{
+  "test_n": 240,
+  "correct": 239,
+  "accuracy": 0.9958333333333333,
+  "every_label_matches": true,
+  "maximum_score_difference": 6.9141387939453125e-06
+}

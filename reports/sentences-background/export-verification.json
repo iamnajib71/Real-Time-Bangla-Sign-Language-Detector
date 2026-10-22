@@ -1,0 +1,20 @@
+[
+  {
+    "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U19_20230706_1688653207413.mp4",
+    "expected": "রাতে খেয়েছেন?",
+    "label": "রাতে খেয়েছেন?",
+    "accepted": true,
+    "score": 0.9996365308761597,
+    "score_type": "uncalibrated softmax",
+    "tracked_frames": 42
+  },
+  {
+    "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U19_20231019_1697713241685.mp4",
+    "expected": "Unrecognised",
+    "label": "Unrecognised",
+    "accepted": false,
+    "score": 0.9999521970748901,
+    "score_type": "uncalibrated softmax",
+    "tracked_frames": 39
+  }
+]

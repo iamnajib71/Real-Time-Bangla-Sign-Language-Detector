@@ -1,0 +1,1114 @@
+{
+  "source": "https://huggingface.co/datasets/banglagov/Ban-Sign-Sent-9K-V1",
+  "source_revision": "0e60ad0",
+  "license_statement": "No explicit licence in inspected dataset card; no source footage redistributed",
+  "selection": "ten text-diverse sentences, chosen before recognition outcomes; ten additional unknown sentences",
+  "selected": [
+    [
+      "23511",
+      "ফল খাও।",
+      "ফল খাওয়া।"
+    ],
+    [
+      "12419",
+      "রাতে খেয়েছেন?",
+      "রাত খাওয়ায়া হয়েছে ?"
+    ],
+    [
+      "25801",
+      "মা চা খান না।",
+      "মা চা না।"
+    ],
+    [
+      "28559",
+      "খালু সকালে কফি খাবে।",
+      "খালা জামাই সকাল কফি হবে।"
+    ],
+    [
+      "29451",
+      "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।"
+    ],
+    [
+      "28390",
+      "দাদী দুপুরে কফি খেতেন।",
+      "দাদি আগে দুপুর কফি ছিল।"
+    ],
+    [
+      "28908",
+      "বাবা রাতে ডাল খাবে না।",
+      "বাবা রাত ডাল খাওয়ায়া হবে না।"
+    ],
+    [
+      "28341",
+      "দাদা বিকালে কফি খায়নি।",
+      "দাদা বিকাল কফি নেই।"
+    ],
+    [
+      "28754",
+      "চাচা সকালে মাংস খেতেন না।",
+      "চাচা আগে সকাল মাংস খাওয়ায়া না।"
+    ],
+    [
+      "28940",
+      "মা দুপুরে ডাল খায়নি।",
+      "মা দুপুর ডাল খাওয়ায়া নেই।"
+    ]
+  ],
+  "unknown": [
+    [
+      "25791",
+      "মা ডাল খান না।",
+      "মা ডাল খাওয়ায়া না।"
+    ],
+    [
+      "25811",
+      "মা কফি খান না।",
+      "মা কফি না।"
+    ],
+    [
+      "25771",
+      "মা মাংস খান না।",
+      "মা মাংস খাওয়ায়া না।"
+    ],
+    [
+      "25800",
+      "বাবা চা খান না।",
+      "বাবা চা না।"
+    ],
+    [
+      "25802",
+      "দাদা চা খান না।",
+      "দাদা চা না।"
+    ],
+    [
+      "25803",
+      "দাদী চা খান না।",
+      "দাদি চা না।"
+    ],
+    [
+      "25804",
+      "চাচা চা খান না।",
+      "চাচা চা না।"
+    ],
+    [
+      "25805",
+      "চাচী চা খান না।",
+      "চাচা বউ চা না।"
+    ],
+    [
+      "25806",
+      "খালা চা খান না।",
+      "খালা চা না।"
+    ],
+    [
+      "25807",
+      "খালু চা খান না।",
+      "খালা জামাই চা না।"
+    ]
+  ],
+  "records": [
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U19_20231019_1697713241685.mp4",
+      "sentence_id": "25803",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "দাদী চা খান না।",
+      "gloss": "দাদি চা না।",
+      "sha256": "19fb3bb2df98dd01d67bba665c6d8d9ee156980596fba0f8a7c40f4b31bc10db"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U7_20231005_1696485547997.mp4",
+      "sentence_id": "25803",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "দাদী চা খান না।",
+      "gloss": "দাদি চা না।",
+      "sha256": "2982038fade9cef43d80961242d8f922b3f3c86220a8e591163edb17292e3018"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U6_20231008_1696770755974.mp4",
+      "sentence_id": "25803",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "দাদী চা খান না।",
+      "gloss": "দাদি চা না।",
+      "sha256": "0c90a9043ba3e9471761fa224bb2fd47fef024a9a21649cc40111580187dd50e"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U4_20231004_1696408909383.mp4",
+      "sentence_id": "25803",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "দাদী চা খান না।",
+      "gloss": "দাদি চা না।",
+      "sha256": "736b9493ad7a73a60a7b5506c56b888e18d74a63f2c80a1e31a70d96b0ebe1aa"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U5_20231010_1696945693321.mp4",
+      "sentence_id": "25803",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "দাদী চা খান না।",
+      "gloss": "দাদি চা না।",
+      "sha256": "4f51cda4c5b350855b205e37a627e37540d59ce26f6e6dbb0cc098f1f9dba3f7"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U5_20231010_1696945679043.mp4",
+      "sentence_id": "25802",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "দাদা চা খান না।",
+      "gloss": "দাদা চা না।",
+      "sha256": "92f49e0c171296e4944605ffc06b789869064f569a4305b85581d2ac36dde041"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U7_20231005_1696485530151.mp4",
+      "sentence_id": "25802",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "দাদা চা খান না।",
+      "gloss": "দাদা চা না।",
+      "sha256": "65df6624aa616ec37de868190c289eb6501c1dda899214b468c960af7c6c8597"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U4_20231004_1696408896144.mp4",
+      "sentence_id": "25802",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "দাদা চা খান না।",
+      "gloss": "দাদা চা না।",
+      "sha256": "ddaf3d208af566830b05e4904e1584efec301c8cba10769905eed9be420d54a1"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U6_20231008_1696770735232.mp4",
+      "sentence_id": "25802",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "দাদা চা খান না।",
+      "gloss": "দাদা চা না।",
+      "sha256": "9066c91e72d92a211a6bd47372f1e4770644750924b4f7baa4fe2b1e28070341"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U19_20231019_1697713231709.mp4",
+      "sentence_id": "25802",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "দাদা চা খান না।",
+      "gloss": "দাদা চা না।",
+      "sha256": "88549815300e6cb2d3ae4d1c651def8ae04a056bab28bbcd6cc08f0f8b6e3892"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U19_20230706_1688653207413.mp4",
+      "sentence_id": "12419",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "রাতে খেয়েছেন?",
+      "gloss": "রাত খাওয়ায়া হয়েছে ?",
+      "sha256": "5f4fdbff6f3f53990a8fbcb5e750ec725bf30a990c176fd3e28a645807631f08"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U5_20230706_1688634660349.mp4",
+      "sentence_id": "12419",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "রাতে খেয়েছেন?",
+      "gloss": "রাত খাওয়ায়া হয়েছে ?",
+      "sha256": "7b61f846fde0bc9e745f1b90df7fae3e5b1d8efd636f58f4845914861e651cbf"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U7_20230706_1688642541513.mp4",
+      "sentence_id": "12419",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "রাতে খেয়েছেন?",
+      "gloss": "রাত খাওয়ায়া হয়েছে ?",
+      "sha256": "d2d07aaa84b3bad8531184c1c0fd420e4c6583b99aa9916e8cd4a5a86d8b399b"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U4_20230703_1688386782109.mp4",
+      "sentence_id": "12419",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "রাতে খেয়েছেন?",
+      "gloss": "রাত খাওয়ায়া হয়েছে ?",
+      "sha256": "00a1c81694dc0aec0f703862f7d5568a3745737de0fd6375fbc10b67d01c4239"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U6_20230704_1688484364886.mp4",
+      "sentence_id": "12419",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "রাতে খেয়েছেন?",
+      "gloss": "রাত খাওয়ায়া হয়েছে ?",
+      "sha256": "ca524520278f55e091d86f78f11fc95815c2c0f9c18bbbee1ff3a0be75c56072"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U19_20231106_1699264293766.mp4",
+      "sentence_id": "28754",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "চাচা সকালে মাংস খেতেন না।",
+      "gloss": "চাচা আগে সকাল মাংস খাওয়ায়া না।",
+      "sha256": "a8cbd13a22ac5783ddcafcbaa8f67f729a0466ad74c38883c0354276208319f3"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U6_20231026_1698322801184.mp4",
+      "sentence_id": "28754",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "চাচা সকালে মাংস খেতেন না।",
+      "gloss": "চাচা আগে সকাল মাংস খাওয়ায়া না।",
+      "sha256": "3f61e7657a11794c66b16d55b40c77a06641acdeb629ad7bc3056604bcdfb567"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U7_20231023_1698044206312.mp4",
+      "sentence_id": "28754",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "চাচা সকালে মাংস খেতেন না।",
+      "gloss": "চাচা আগে সকাল মাংস খাওয়ায়া না।",
+      "sha256": "2922c534f2cb66715610ff40b450007e5a70b2a32225db96f5d652802d93ded1"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U5_20231023_1698069455959.mp4",
+      "sentence_id": "28754",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "চাচা সকালে মাংস খেতেন না।",
+      "gloss": "চাচা আগে সকাল মাংস খাওয়ায়া না।",
+      "sha256": "f9ba00cd9ccf62502ff8190c279076d4f9ff9fd58a4ded006ca2ddaddf21ce72"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U4_20231018_1697612385178.mp4",
+      "sentence_id": "28754",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "চাচা সকালে মাংস খেতেন না।",
+      "gloss": "চাচা আগে সকাল মাংস খাওয়ায়া না।",
+      "sha256": "c0894ab7ac9ec26f3a415a1425f0901f078ef1ba1a3ab1d0409f56500445a990"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U7_20231023_1698032714820.mp4",
+      "sentence_id": "28559",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "খালু সকালে কফি খাবে।",
+      "gloss": "খালা জামাই সকাল কফি হবে।",
+      "sha256": "e4cf28b09adf5ad1fae7cd363d08c97c10ac4915d0aaf3a8b9a7c423ba6c65e2"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U4_20231017_1697557481995.mp4",
+      "sentence_id": "28559",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "খালু সকালে কফি খাবে।",
+      "gloss": "খালা জামাই সকাল কফি হবে।",
+      "sha256": "24d1795699ab3b04774185e9b9b690af799928120fcc2d382b6f657ed49b35fd"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U19_20231106_1699246074978.mp4",
+      "sentence_id": "28559",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "খালু সকালে কফি খাবে।",
+      "gloss": "খালা জামাই সকাল কফি হবে।",
+      "sha256": "2d1332452f420311388f2a43dd5c070fed06c952223524b59794bde3c6949d97"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U5_20231023_1698061654851.mp4",
+      "sentence_id": "28559",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "খালু সকালে কফি খাবে।",
+      "gloss": "খালা জামাই সকাল কফি হবে।",
+      "sha256": "71837879dbc5563c00bc378f8a883c499324b75dcb1480f02364405a37ebb0d8"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U6_20231025_1698246736600.mp4",
+      "sentence_id": "28559",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "খালু সকালে কফি খাবে।",
+      "gloss": "খালা জামাই সকাল কফি হবে।",
+      "sha256": "5ec4bd03f1b3fc3a8e7a1026949155ae30a1f4bcff76176c45006217376d3de3"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U5_20231010_1696932386108.mp4",
+      "sentence_id": "23511",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "ফল খাও।",
+      "gloss": "ফল খাওয়া।",
+      "sha256": "8838ada4b4892920ebd7b09e477c540fb11cf36e7a6bccdb00905dd77a74cb84"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U7_20231010_1696938368618.mp4",
+      "sentence_id": "23511",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "ফল খাও।",
+      "gloss": "ফল খাওয়া।",
+      "sha256": "160505eee49db246c24f6cdaad3cf7605d0ec0c2fa25a1aaadc280a852ea946d"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U4_20231008_1696764165112.mp4",
+      "sentence_id": "23511",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "ফল খাও।",
+      "gloss": "ফল খাওয়া।",
+      "sha256": "e2d4da98021f3ec312ccd2d25dc6116d42cf8f2c2dbfd425608d66026b200415"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U19_20231010_1696931429197.mp4",
+      "sentence_id": "23511",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "ফল খাও।",
+      "gloss": "ফল খাওয়া।",
+      "sha256": "5f13d152205645cbf7faa24aea510e794b9269b2b4b5a6eac21b03be903b0dad"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U6_20231009_1696840042267.mp4",
+      "sentence_id": "23511",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "ফল খাও।",
+      "gloss": "ফল খাওয়া।",
+      "sha256": "70da83cc67da34d31655c446325cdc2664d6ae24196e70913dc5b4520ba21ff2"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U6_20231008_1696770705049.mp4",
+      "sentence_id": "25800",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "বাবা চা খান না।",
+      "gloss": "বাবা চা না।",
+      "sha256": "7a4b8f97dddae1c9429a223925d2ecc92c999e846b320681b6a9779e21ec7a42"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U19_20231019_1697713209248.mp4",
+      "sentence_id": "25800",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "বাবা চা খান না।",
+      "gloss": "বাবা চা না।",
+      "sha256": "28cb1f80f2bc24cef1054985e53de371709bb586504aaa3f81894f86c2d64865"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U4_20231004_1696408851339.mp4",
+      "sentence_id": "25800",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "বাবা চা খান না।",
+      "gloss": "বাবা চা না।",
+      "sha256": "d56ef7890ba055af821c3cc5006a214e8f023bd8147b53164a03b20978d24a1c"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U7_20231005_1696485496715.mp4",
+      "sentence_id": "25800",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "বাবা চা খান না।",
+      "gloss": "বাবা চা না।",
+      "sha256": "e096cd9028bde59d024882ddd5cb52f08a1e6501abf4bca4c0e516c16bed3220"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U5_20231010_1696945653331.mp4",
+      "sentence_id": "25800",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "বাবা চা খান না।",
+      "gloss": "বাবা চা না।",
+      "sha256": "abfe48d1b489c229acefa698f7c41625bb99830839594eddcfaab52e6c239524"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U7_20231005_1696484697453.mp4",
+      "sentence_id": "25771",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "মা মাংস খান না।",
+      "gloss": "মা মাংস খাওয়ায়া না।",
+      "sha256": "298fd3ae827a7f8d39a05309c7b5c23077b29d418d263329f17d8815933860b5"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U4_20231004_1696405011186.mp4",
+      "sentence_id": "25771",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "মা মাংস খান না।",
+      "gloss": "মা মাংস খাওয়ায়া না।",
+      "sha256": "bf23a60613a47e1a398bca4a470adc8a547fd73fe224100e172c36c92013d648"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U5_20231010_1696945262767.mp4",
+      "sentence_id": "25771",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "মা মাংস খান না।",
+      "gloss": "মা মাংস খাওয়ায়া না।",
+      "sha256": "59c345dc49c98b252084302e0a213e504d66f2c93e41d6e61dfd02c57ecd8de0"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U19_20231018_1697642413332.mp4",
+      "sentence_id": "25771",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "মা মাংস খান না।",
+      "gloss": "মা মাংস খাওয়ায়া না।",
+      "sha256": "f8f1a67fd6a6bd94d5b1b56d5b88ffb174f745ed2fcf17e8b9e9a7ecbae3ee83"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U6_20231008_1696769850097.mp4",
+      "sentence_id": "25771",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "মা মাংস খান না।",
+      "gloss": "মা মাংস খাওয়ায়া না।",
+      "sha256": "ee250f2d7ffb4cc654326ede086a5534cf4e1c18845e8cfb91e85690138bfde8"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U7_20231005_1696485320596.mp4",
+      "sentence_id": "25791",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "মা ডাল খান না।",
+      "gloss": "মা ডাল খাওয়ায়া না।",
+      "sha256": "2074193a2fe70051f74868de8b23517355d0e68f72bdc4709b904039ae0c9784"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U5_20231010_1696945480034.mp4",
+      "sentence_id": "25791",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "মা ডাল খান না।",
+      "gloss": "মা ডাল খাওয়ায়া না।",
+      "sha256": "e33f163a9b824adbd28031b82037bf469b31c9505e5a87ab631723d9f197caab"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U4_20231004_1696408636030.mp4",
+      "sentence_id": "25791",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "মা ডাল খান না।",
+      "gloss": "মা ডাল খাওয়ায়া না।",
+      "sha256": "5345c29443191266eb173d581b24851810c0fb704e7219f31cb568e87923b738"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U6_20231008_1696770488496.mp4",
+      "sentence_id": "25791",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "মা ডাল খান না।",
+      "gloss": "মা ডাল খাওয়ায়া না।",
+      "sha256": "379fbc51043b1afefa35155afaa9c597965ee458f8c09e6fcc27ad089c8431f2"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U19_20231018_1697642767406.mp4",
+      "sentence_id": "25791",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "মা ডাল খান না।",
+      "gloss": "মা ডাল খাওয়ায়া না।",
+      "sha256": "ce7f4b2a0aa2904b34b839f887d8f4b041b1ccb156a06ac3b3938432c601e8ff"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U7_20231005_1696485630360.mp4",
+      "sentence_id": "25807",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "খালু চা খান না।",
+      "gloss": "খালা জামাই চা না।",
+      "sha256": "c71d73b2fd58db60fdbb89bfa72ad82035f7eba85fe566be825ff90be6b1c999"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U4_20231004_1696409332148.mp4",
+      "sentence_id": "25807",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "খালু চা খান না।",
+      "gloss": "খালা জামাই চা না।",
+      "sha256": "d5367ccfbafc691b9e5969a6c3425b74aedbc0ad2ff168aaae1c83a26fa52a4a"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U6_20231008_1696770935885.mp4",
+      "sentence_id": "25807",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "খালু চা খান না।",
+      "gloss": "খালা জামাই চা না।",
+      "sha256": "d8c27b26cd6e3a358afe98e8b0a652723deeaa0ac4c886ebe34119c533a08e6b"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U19_20231019_1697713294387.mp4",
+      "sentence_id": "25807",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "খালু চা খান না।",
+      "gloss": "খালা জামাই চা না।",
+      "sha256": "bf6fc7c27529d322224a6c5c08e5aeafe508fcecf3fc7ed788b839e4f76a909d"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U5_20231010_1696945793416.mp4",
+      "sentence_id": "25807",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "খালু চা খান না।",
+      "gloss": "খালা জামাই চা না।",
+      "sha256": "3976ef39455d0df0dd6fbf1de371db8cbfefad2071bd167b935ec59330bd9adb"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U19_20231107_1699334421896.mp4",
+      "sentence_id": "28908",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "বাবা রাতে ডাল খাবে না।",
+      "gloss": "বাবা রাত ডাল খাওয়ায়া হবে না।",
+      "sha256": "e7d4b8c1f72b8fc4ab046a74fc9c33d8e4997e52ca184efbc5a7a93765de7552"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U4_20231018_1697626983185.mp4",
+      "sentence_id": "28908",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "বাবা রাতে ডাল খাবে না।",
+      "gloss": "বাবা রাত ডাল খাওয়ায়া হবে না।",
+      "sha256": "088d8348b7f10d2d3e47d99aba58094a261054d785bcabcbe9333f4c1ec4ae04"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U6_20231030_1698667280669.mp4",
+      "sentence_id": "28908",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "বাবা রাতে ডাল খাবে না।",
+      "gloss": "বাবা রাত ডাল খাওয়ায়া হবে না।",
+      "sha256": "ab113b418aaba8ee88e5ff0d1a859fa14d37c6a497fc135f98ffa484ce16224a"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U5_20231025_1698230891501.mp4",
+      "sentence_id": "28908",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "বাবা রাতে ডাল খাবে না।",
+      "gloss": "বাবা রাত ডাল খাওয়ায়া হবে না।",
+      "sha256": "16d0a03058b4af5ed7b6fc5f5b8a839a22e3ed058ce99a83e8fd2ca858336711"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U7_20231025_1698205098578.mp4",
+      "sentence_id": "28908",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "বাবা রাতে ডাল খাবে না।",
+      "gloss": "বাবা রাত ডাল খাওয়ায়া হবে না।",
+      "sha256": "dcaa31bdd94984d63aa1ddf39f49b1c61030391c4fcc642d348904d956a5f48c"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U5_20231010_1696945757987.mp4",
+      "sentence_id": "25806",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "খালা চা খান না।",
+      "gloss": "খালা চা না।",
+      "sha256": "29a3789bdc6e0ad06455581102bd8b4892c8536552e92e2266d72ac91a2bd233"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U6_20231008_1696770891280.mp4",
+      "sentence_id": "25806",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "খালা চা খান না।",
+      "gloss": "খালা চা না।",
+      "sha256": "57d74c7101165101aae99fe5240d141475f947d3cb4cf6b7ad8c2ca43690b9f5"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U19_20231019_1697713281046.mp4",
+      "sentence_id": "25806",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "খালা চা খান না।",
+      "gloss": "খালা চা না।",
+      "sha256": "236dca99919e6fb89d155bb88fd2064b9e813f6d35898a4f1afacb29b12a5dfa"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U4_20231004_1696409023180.mp4",
+      "sentence_id": "25806",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "খালা চা খান না।",
+      "gloss": "খালা চা না।",
+      "sha256": "bed040a23d2b97bed6cceba7147b9d9692893f7762e8a35eac9de54ae04f1357"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U7_20231005_1696485604441.mp4",
+      "sentence_id": "25806",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "খালা চা খান না।",
+      "gloss": "খালা চা না।",
+      "sha256": "037d40858802e443c76c4105f30907ff059e8dd1aa7f9eae66cb9186c957df9c"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U5_20231022_1697987629827.mp4",
+      "sentence_id": "28390",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "দাদী দুপুরে কফি খেতেন।",
+      "gloss": "দাদি আগে দুপুর কফি ছিল।",
+      "sha256": "9b7066fd762e48390af4d39955fa7176e81290721d7ee3a007d76d296b81aefd"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U6_20231025_1698241191606.mp4",
+      "sentence_id": "28390",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "দাদী দুপুরে কফি খেতেন।",
+      "gloss": "দাদি আগে দুপুর কফি ছিল।",
+      "sha256": "9b0628ffa0126639a1ef27b153fbc2bc449f7339713ae8ec054647185805f584"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U4_20231017_1697553286386.mp4",
+      "sentence_id": "28390",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "দাদী দুপুরে কফি খেতেন।",
+      "gloss": "দাদি আগে দুপুর কফি ছিল।",
+      "sha256": "ea09a543e13e4b5abef0c727c9e4f06367d2f02143b731e07f2782bd8d25064d"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U19_20231105_1699174681669.mp4",
+      "sentence_id": "28390",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "দাদী দুপুরে কফি খেতেন।",
+      "gloss": "দাদি আগে দুপুর কফি ছিল।",
+      "sha256": "4b6c6172ebfa15a4e2f366c0c9837b810e5bc2ab0a0c177f9f646d58653c8536"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U7_20231022_1697954754420.mp4",
+      "sentence_id": "28390",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "দাদী দুপুরে কফি খেতেন।",
+      "gloss": "দাদি আগে দুপুর কফি ছিল।",
+      "sha256": "749404fa518b62720da355691a3b21ea6d21b9a4e1534e8c726dc0c6008f9dbf"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U6_20231008_1696771002365.mp4",
+      "sentence_id": "25811",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "মা কফি খান না।",
+      "gloss": "মা কফি না।",
+      "sha256": "ef5867dc780d1fd704ace407112230f3c620b3dce9d071d076814d263e5bc801"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U5_20231010_1696945857592.mp4",
+      "sentence_id": "25811",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "মা কফি খান না।",
+      "gloss": "মা কফি না।",
+      "sha256": "30aeeadab8b90899baa355e16394348b314ef881f7067a042ad4c8775f5c8d77"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U4_20231004_1696409471397.mp4",
+      "sentence_id": "25811",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "মা কফি খান না।",
+      "gloss": "মা কফি না।",
+      "sha256": "1147d60ca0c85a36429a86c1a7504326a6cdbbdb8d609169de97d09259dd68be"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U7_20231005_1696485725465.mp4",
+      "sentence_id": "25811",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "মা কফি খান না।",
+      "gloss": "মা কফি না।",
+      "sha256": "6c0f178547284524d8bf8699de508dbc97a8eafd5e01ebae809997ead83e1c40"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U19_20231019_1697713342659.mp4",
+      "sentence_id": "25811",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "মা কফি খান না।",
+      "gloss": "মা কফি না।",
+      "sha256": "83840372faefc645f178290d14c8f3cb587c648b3a3b3fdb489f3b5fc215d584"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U4_20231004_1696408927402.mp4",
+      "sentence_id": "25804",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "চাচা চা খান না।",
+      "gloss": "চাচা চা না।",
+      "sha256": "8efcb4b570bf596d531180381fd18a937bbfc0927acfe7e6bb83cc004d9311f7"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U6_20231008_1696770777637.mp4",
+      "sentence_id": "25804",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "চাচা চা খান না।",
+      "gloss": "চাচা চা না।",
+      "sha256": "cd3db0e54b6354afba3e7cca55f43c2fcf6f326ae5fcf3752a75a226e9bb76c8"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U7_20231005_1696485560072.mp4",
+      "sentence_id": "25804",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "চাচা চা খান না।",
+      "gloss": "চাচা চা না।",
+      "sha256": "163ae0872eab788439d2abc02de356c0c4e2839e32415962b6ac63019165c295"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U19_20231019_1697713253050.mp4",
+      "sentence_id": "25804",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "চাচা চা খান না।",
+      "gloss": "চাচা চা না।",
+      "sha256": "4e31c5aff429e39cda8092ebbb27d170077eb4a02da8e1448142bbc70972fd93"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U5_20231010_1696945705671.mp4",
+      "sentence_id": "25804",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "চাচা চা খান না।",
+      "gloss": "চাচা চা না।",
+      "sha256": "c815c0dff275fafe8a1b9b94c94f499b2f6077f681978e1c4c9ef77ae9471a27"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U4_20231004_1696408942880.mp4",
+      "sentence_id": "25805",
+      "signer": "4",
+      "split": "train",
+      "known": false,
+      "text": "চাচী চা খান না।",
+      "gloss": "চাচা বউ চা না।",
+      "sha256": "6916d731ca9eabe6e36957db789a70d352fb633fa71df0d39763535a8382be42"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U5_20231010_1696945720406.mp4",
+      "sentence_id": "25805",
+      "signer": "5",
+      "split": "train",
+      "known": false,
+      "text": "চাচী চা খান না।",
+      "gloss": "চাচা বউ চা না।",
+      "sha256": "6c1b9546d5b3763fc6757e13dd5c8017afbf3fd5527f793225ebc309d0560064"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U7_20231005_1696485578210.mp4",
+      "sentence_id": "25805",
+      "signer": "7",
+      "split": "validation",
+      "known": false,
+      "text": "চাচী চা খান না।",
+      "gloss": "চাচা বউ চা না।",
+      "sha256": "d8b72a08eae72bd5e2aea0b469cabb59d018f95794535e5979b1dc2ea2b4a763"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U6_20231008_1696770798475.mp4",
+      "sentence_id": "25805",
+      "signer": "6",
+      "split": "train",
+      "known": false,
+      "text": "চাচী চা খান না।",
+      "gloss": "চাচা বউ চা না।",
+      "sha256": "9ca3d60af1685016059c1bd95c5073499e01152696e6cd1b338ce7e1f38bd692"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U19_20231019_1697713265724.mp4",
+      "sentence_id": "25805",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "চাচী চা খান না।",
+      "gloss": "চাচা বউ চা না।",
+      "sha256": "ca6a735408b0c5095de87ad65bb5a54f48183831e7aba42e66defceeaa6505ae"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U4_20231004_1696408883451.mp4",
+      "sentence_id": "25801",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "মা চা খান না।",
+      "gloss": "মা চা না।",
+      "sha256": "2cffed6b2ff949cffa9f2ae7ac9b2571c58f449fd9db546df5c30ec88d82e786"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U6_20231008_1696770719101.mp4",
+      "sentence_id": "25801",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "মা চা খান না।",
+      "gloss": "মা চা না।",
+      "sha256": "6c56c3f8b2c08b7ef8ec805f3e19304347ef640bd9e3f53dcf124a2c7cec229c"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U19_20231019_1697713220224.mp4",
+      "sentence_id": "25801",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "মা চা খান না।",
+      "gloss": "মা চা না।",
+      "sha256": "4dccb1261de1bea1fba968ea3308cfe2f4e990e30052f67e39aae9c58b70d0ff"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U5_20231010_1696945665840.mp4",
+      "sentence_id": "25801",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "মা চা খান না।",
+      "gloss": "মা চা না।",
+      "sha256": "1408705f615edba9e3493d0dbec22d95fe31be59df36eb0bd7432f175267d882"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U7_20231005_1696485516522.mp4",
+      "sentence_id": "25801",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "মা চা খান না।",
+      "gloss": "মা চা না।",
+      "sha256": "9e58f7d22ca4dfe27c91146dd5b1a25a3fdff1bea4c354658c333a5b008405bc"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U6_20231031_1698735067312.mp4",
+      "sentence_id": "29451",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "gloss": "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।",
+      "sha256": "74473e22e6021709e4d8c847cebf7a67b525ea747b9ed7787ff77fe4adc85101"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U5_20231026_1698311801319.mp4",
+      "sentence_id": "29451",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "gloss": "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।",
+      "sha256": "d46b4329b726f29744e9c58b820757fe82772271bd9ca92cf68825ef6131c757"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U4_20231019_1697702907194.mp4",
+      "sentence_id": "29451",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "gloss": "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।",
+      "sha256": "1cc18ebc96a5a15f0b7e03d89a3ed73b6e2d5205f802c7f29530a10a25ae47c3"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U19_20231111_1699679656296.mp4",
+      "sentence_id": "29451",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "gloss": "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।",
+      "sha256": "0318a1b63f2204d30b86eea7d5cec411b01d05ca43127d4bf4da6efc5d5ea745"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U7_20231026_1698302712671.mp4",
+      "sentence_id": "29451",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "gloss": "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।",
+      "sha256": "580aa89692d9dfd624138e6926359517f6dd606ae3cdd488164afe740264332b"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U6_20231025_1698238999752.mp4",
+      "sentence_id": "28341",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "দাদা বিকালে কফি খায়নি।",
+      "gloss": "দাদা বিকাল কফি নেই।",
+      "sha256": "8fdfa9ba0d16e667b23921ac164a4c9910a5e3adcc932e52fa9b5fd57f30f417"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U7_20231022_1697951217910.mp4",
+      "sentence_id": "28341",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "দাদা বিকালে কফি খায়নি।",
+      "gloss": "দাদা বিকাল কফি নেই।",
+      "sha256": "98d06a5be8ea5db85e73097ec68b6e130f48ec00f383fa45333aec7c4bfa9c71"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U4_20231017_1697550174499.mp4",
+      "sentence_id": "28341",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "দাদা বিকালে কফি খায়নি।",
+      "gloss": "দাদা বিকাল কফি নেই।",
+      "sha256": "d6d55a181f705b8779ce75c83f8efefffae6735c77916203239d1a719f6620dd"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U19_20231105_1699172293412.mp4",
+      "sentence_id": "28341",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "দাদা বিকালে কফি খায়নি।",
+      "gloss": "দাদা বিকাল কফি নেই।",
+      "sha256": "a49283fa3776721b78b8e8e0364120f00f3269f57a1f5c1aa1f6054bc363ea16"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U5_20231022_1697986285218.mp4",
+      "sentence_id": "28341",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "দাদা বিকালে কফি খায়নি।",
+      "gloss": "দাদা বিকাল কফি নেই।",
+      "sha256": "93c301a0ad093d52122236faa1de7bb34efb70bb1f047a8b15a8607cfe70485a"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U7_20231025_1698207800012.mp4",
+      "sentence_id": "28940",
+      "signer": "7",
+      "split": "validation",
+      "known": true,
+      "text": "মা দুপুরে ডাল খায়নি।",
+      "gloss": "মা দুপুর ডাল খাওয়ায়া নেই।",
+      "sha256": "0c08902435aa77c3721c3bd31b7e8a98b8c6b1ac900968b9c2999dd7bd5e66f1"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U5_20231025_1698231581216.mp4",
+      "sentence_id": "28940",
+      "signer": "5",
+      "split": "train",
+      "known": true,
+      "text": "মা দুপুরে ডাল খায়নি।",
+      "gloss": "মা দুপুর ডাল খাওয়ায়া নেই।",
+      "sha256": "b87232417b7a677fa09c04351786c9de9a09ef6a80bf573b5af4ee92cb4749da"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U19_20231107_1699334927855.mp4",
+      "sentence_id": "28940",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "মা দুপুরে ডাল খায়নি।",
+      "gloss": "মা দুপুর ডাল খাওয়ায়া নেই।",
+      "sha256": "6a4df3b8e7ea6310d4759ef38da09c1c6cab3cd33b3747b4fe4e0518e91b52dc"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U4_20231018_1697629250102.mp4",
+      "sentence_id": "28940",
+      "signer": "4",
+      "split": "train",
+      "known": true,
+      "text": "মা দুপুরে ডাল খায়নি।",
+      "gloss": "মা দুপুর ডাল খাওয়ায়া নেই।",
+      "sha256": "1e39b9f67a554d6c9877185b4b929e79acddf14db6b9edaafb6987fcfb533304"
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U6_20231030_1698668042074.mp4",
+      "sentence_id": "28940",
+      "signer": "6",
+      "split": "train",
+      "known": true,
+      "text": "মা দুপুরে ডাল খায়নি।",
+      "gloss": "মা দুপুর ডাল খাওয়ায়া নেই।",
+      "sha256": "665863e88ef435c2719432fd96f2ed38cfdfb96a5cff97578ea74c87ec741e3d"
+    }
+  ],
+  "split": "U4/U5/U6 train, U7 validation, U19 final test; disjoint signer IDs",
+  "background_training": true
+}

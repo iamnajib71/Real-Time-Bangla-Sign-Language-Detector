@@ -1,0 +1,16 @@
+[
+  {
+    "file": "correct.png",
+    "actual": "2433",
+    "predicted": "2433",
+    "confidence": 0.9999030828475952,
+    "source": "2433/2b54ca01e7a712f6e195a4dca3b5145a5aaa88e1.jpg"
+  },
+  {
+    "file": "incorrect.png",
+    "actual": "2462",
+    "predicted": "2486-2488-2487",
+    "confidence": 0.2554055154323578,
+    "source": "2462/84b1adaa47ae667bf15ee2ed017b99c9f754e523.jpg"
+  }
+]

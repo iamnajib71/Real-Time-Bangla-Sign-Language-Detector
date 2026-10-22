@@ -1,0 +1,781 @@
+{
+  "task": "selected held-out letter-spelling video, not natural continuous signing",
+  "target": "আমি আসি",
+  "actual": "আমি আসি",
+  "matched": true,
+  "frames": 86,
+  "duration_seconds": 21.5,
+  "confidence_threshold": 0.4,
+  "source_selection": "highest-confidence correctly predicted held-out example per required letter; illustrative, not an independent benchmark",
+  "source_predictions": [
+    {
+      "path": "2/DSC_1457.png",
+      "class": "2",
+      "sha256_preprocessed": "8f1dbf8c2c322cdfdacdec7f31e3e889a0e09038ffe26a32b74ebfa3f00a6e5a",
+      "duplicates": [],
+      "split": "test",
+      "actual_index": 11,
+      "predicted_index": 11,
+      "actual": "আ",
+      "predicted": "আ",
+      "confidence": 0.4809761643409729,
+      "correct": true
+    },
+    {
+      "path": "28/IMG_5394.png",
+      "class": "28",
+      "sha256_preprocessed": "c170cdcdc3fe2d96916e0cb7562d74267ed86662511ef5b423ca9fe37f38db7e",
+      "duplicates": [],
+      "split": "test",
+      "actual_index": 20,
+      "predicted_index": 20,
+      "actual": "ম",
+      "predicted": "ম",
+      "confidence": 0.9572706818580627,
+      "correct": true
+    },
+    {
+      "path": "3/IMG_9508.png",
+      "class": "3",
+      "sha256_preprocessed": "23eb8c14aecde55cc726bf6ebb8432e1368150eb0f44bd06fe833d5e8c8508c0",
+      "duplicates": [],
+      "split": "test",
+      "actual_index": 22,
+      "predicted_index": 22,
+      "actual": "ই",
+      "predicted": "ই",
+      "confidence": 0.8274455070495605,
+      "correct": true
+    },
+    {
+      "path": "2/DSC_1457.png",
+      "class": "2",
+      "sha256_preprocessed": "8f1dbf8c2c322cdfdacdec7f31e3e889a0e09038ffe26a32b74ebfa3f00a6e5a",
+      "duplicates": [],
+      "split": "test",
+      "actual_index": 11,
+      "predicted_index": 11,
+      "actual": "আ",
+      "predicted": "আ",
+      "confidence": 0.4809761643409729,
+      "correct": true
+    },
+    {
+      "path": "32/IMG_9587.png",
+      "class": "32",
+      "sha256_preprocessed": "a26bdf2ff1f39cda3e3f2b8bd51d56936418606a41ee8ee4939678635847ca48",
+      "duplicates": [],
+      "split": "test",
+      "actual_index": 25,
+      "predicted_index": 25,
+      "actual": "স",
+      "predicted": "স",
+      "confidence": 0.9759756326675415,
+      "correct": true
+    },
+    {
+      "path": "3/IMG_9508.png",
+      "class": "3",
+      "sha256_preprocessed": "23eb8c14aecde55cc726bf6ebb8432e1368150eb0f44bd06fe833d5e8c8508c0",
+      "duplicates": [],
+      "split": "test",
+      "actual_index": 22,
+      "predicted_index": 22,
+      "actual": "ই",
+      "predicted": "ই",
+      "confidence": 0.8274455070495605,
+      "correct": true
+    }
+  ],
+  "model_sha256": "ec7629aead83ffe8042b35dfb8dc4619d9ed66b52d16b9ebf8bda1b10688ee81",
+  "all_frames": [
+    {
+      "frame": 0,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": ""
+    },
+    {
+      "frame": 1,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": ""
+    },
+    {
+      "frame": 2,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 3,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 4,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 5,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 6,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 7,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 8,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আ"
+    },
+    {
+      "frame": 9,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আ"
+    },
+    {
+      "frame": 10,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আ"
+    },
+    {
+      "frame": 11,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 12,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আ"
+    },
+    {
+      "frame": 13,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 14,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 15,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 16,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 17,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 18,
+      "index": 20,
+      "label": "ম",
+      "confidence": 0.9572705626487732,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 19,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আম"
+    },
+    {
+      "frame": 20,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আম"
+    },
+    {
+      "frame": 21,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আম"
+    },
+    {
+      "frame": 22,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 23,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আম"
+    },
+    {
+      "frame": 24,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 25,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 26,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 27,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 28,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 29,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 30,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 31,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 32,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 33,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 34,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 35,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 36,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 37,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 38,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 39,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 40,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 41,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 42,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 43,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 44,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি"
+    },
+    {
+      "frame": 45,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 46,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি"
+    },
+    {
+      "frame": 47,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 48,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 49,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 50,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 51,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 52,
+      "index": 11,
+      "label": "আ",
+      "confidence": 0.48097532987594604,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 53,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 54,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 55,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 56,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 57,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আ"
+    },
+    {
+      "frame": 58,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 59,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 60,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 61,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 62,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 63,
+      "index": 25,
+      "label": "স",
+      "confidence": 0.9759749174118042,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 64,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 65,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 66,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 67,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 68,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আস"
+    },
+    {
+      "frame": 69,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 70,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 71,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 72,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 73,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 74,
+      "index": 22,
+      "label": "ই",
+      "confidence": 0.8274462819099426,
+      "pause_card": false,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 75,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 76,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 77,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 78,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 79,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 80,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 81,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 82,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 83,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 84,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    },
+    {
+      "frame": 85,
+      "index": 31,
+      "label": "এ",
+      "confidence": 0.1432173252105713,
+      "pause_card": true,
+      "text": "আমি আসি"
+    }
+  ]
+}

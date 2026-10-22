@@ -1,0 +1,1043 @@
+[
+  {
+    "doi": "10.1016/j.dib.2023.109797",
+    "metadata": {
+      "status": "ok",
+      "message-type": "work",
+      "message-version": "1.0.0",
+      "message": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              9,
+              23
+            ]
+          ],
+          "date-time": "2026-09-23T17:31:03Z",
+          "timestamp": 1790184663981,
+          "version": "4.1.0"
+        },
+        "reference-count": 16,
+        "publisher": "Elsevier BV",
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  1
+                ]
+              ],
+              "date-time": "2023-12-01T00:00:00Z",
+              "timestamp": 1701388800000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  1
+                ]
+              ],
+              "date-time": "2023-12-01T00:00:00Z",
+              "timestamp": 1701388800000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/legal/tdmrep-license"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2023,
+                  11,
+                  7
+                ]
+              ],
+              "date-time": "2023-11-07T00:00:00Z",
+              "timestamp": 1699315200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 0,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "funder": [
+          {
+            "DOI": "10.13039/501100008677",
+            "name": "Khulna University",
+            "doi-asserted-by": "publisher",
+            "id": [
+              {
+                "id": "10.13039/501100008677",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ]
+          }
+        ],
+        "content-domain": {
+          "domain": [
+            "elsevier.com",
+            "sciencedirect.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "short-container-title": [
+          "Data in Brief"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        },
+        "DOI": "10.1016/j.dib.2023.109797",
+        "type": "journal-article",
+        "created": {
+          "date-parts": [
+            [
+              2023,
+              11,
+              10
+            ]
+          ],
+          "date-time": "2023-11-10T23:52:28Z",
+          "timestamp": 1699660348000
+        },
+        "page": "109797",
+        "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 16,
+        "special_numbering": "C",
+        "title": [
+          "KU-BdSL: An open dataset for Bengali sign language recognition"
+        ],
+        "prefix": "10.1016",
+        "volume": "51",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-1929-0939",
+            "authenticated-orcid": false,
+            "given": "Abdullah Al Jaid",
+            "family": "Jim",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4660-4999",
+            "authenticated-orcid": false,
+            "given": "Ibrahim",
+            "family": "Rafi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Md. Zahid",
+            "family": "Akon",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-8489-3827",
+            "authenticated-orcid": false,
+            "given": "Uzzal",
+            "family": "Biswas",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2391-5767",
+            "authenticated-orcid": false,
+            "given": "Abdullah-Al",
+            "family": "Nahid",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "member": "78",
+        "reference": [
+          {
+            "issue": "4",
+            "key": "10.1016/j.dib.2023.109797_bib0001",
+            "first-page": "182",
+            "article-title": "Face detection using color models",
+            "volume": "2",
+            "author": "Tathe",
+            "year": "2012",
+            "journal-title": "World J. Sci. Technol."
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0002",
+            "series-title": "ICCIT",
+            "article-title": "Geometrical model based hand gesture recognition for interpreting Bengali sign language using computer vision",
+            "author": "Pavel",
+            "year": "2003"
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0003",
+            "series-title": "2009 Annual IEEE India Conference",
+            "first-page": "1",
+            "article-title": "A translator for Bangla text to sign language",
+            "author": "Sarkar",
+            "year": "2009"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.dib.2023.109797_bib0004",
+            "first-page": "43",
+            "article-title": "Intelligent sign language verification system\u2013using image processing, clustering and neural network concepts",
+            "volume": "1",
+            "author": "Rahim",
+            "year": "2010",
+            "journal-title": "Int. J. Eng. Comput. Sci. Math."
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0005",
+            "series-title": "2016 International Conference on Innovations in Science, Engineering and Technology (ICISET)",
+            "first-page": "1",
+            "article-title": "Hand sign language recognition for Bangla alphabet using support vector machine",
+            "author": "Uddin",
+            "year": "2016"
+          },
+          {
+            "issue": "3",
+            "key": "10.1016/j.dib.2023.109797_bib0006",
+            "first-page": "3",
+            "article-title": "Recognition of the spoken French alphabet using a two-pass dynamic time warp algorithm",
+            "volume": "17",
+            "author": "Cordeau",
+            "year": "1989",
+            "journal-title": "Canad. Acoust."
+          },
+          {
+            "issue": "297",
+            "key": "10.1016/j.dib.2023.109797_bib0007",
+            "doi-asserted-by": "crossref",
+            "first-page": "485",
+            "DOI": "10.1017/S0003598X00092541",
+            "article-title": "The Egyptian origin of the Greek alphabetic numerals",
+            "volume": "77",
+            "author": "Chrisomalis",
+            "year": "2003",
+            "journal-title": "Antiquity"
+          },
+          {
+            "issue": "1",
+            "key": "10.1016/j.dib.2023.109797_bib0008",
+            "first-page": "23",
+            "article-title": "Recognition of on-line Arabic handwritten characters using structural features",
+            "volume": "5",
+            "author": "Al-Taani",
+            "year": "2010",
+            "journal-title": "J. Pattern Recognit. Res."
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0009",
+            "series-title": "2022 45th International Conference on Telecommunications and Signal Processing (TSP)",
+            "first-page": "272",
+            "article-title": "Anew convolutional neural network for recognizing handwritten letters of the Russian alphabet",
+            "author": "Safonova",
+            "year": "2022"
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0010",
+            "series-title": "2019 Joint 8th international conference on informatics, electronics & vision (ICIEV) and 2019 3rd international conference on imaging, vision & pattern recognition (icIVPR)",
+            "first-page": "103",
+            "article-title": "A complete Bengali stop word detection mechanism",
+            "author": "ul Haque",
+            "year": "2019"
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0011",
+            "series-title": "Bengali (Bangla) Alphabet Book",
+            "author": "Verma",
+            "year": "2009"
+          },
+          {
+            "issue": "4",
+            "key": "10.1016/j.dib.2023.109797_bib0012",
+            "first-page": "1",
+            "article-title": "Imbalanced dataset classification and solutions: a review",
+            "volume": "5",
+            "author": "Ramyachitra",
+            "year": "2014",
+            "journal-title": "Int. J. Comput. Bus. Res."
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0013",
+            "doi-asserted-by": "crossref",
+            "first-page": "36",
+            "DOI": "10.58496/MJBD/2023/006",
+            "article-title": "Large scale data using K-means",
+            "volume": "2023",
+            "author": "Zaib",
+            "year": "2023",
+            "journal-title": "Mesopot. J. Big Data"
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0014",
+            "first-page": "1",
+            "article-title": "Image-based Bengali sign language alphabet recognition for deaf and dumb community",
+            "author": "Rafi",
+            "year": "2019",
+            "journal-title": "2019 IEEE Global Humanitarian Technology Conference (GHTC)"
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0015",
+            "doi-asserted-by": "crossref",
+            "first-page": "59",
+            "DOI": "10.58496/ADSA/2023/004",
+            "article-title": "Consensus on criteria for selection of sign language mobile apps: a Delphi study",
+            "volume": "2023",
+            "author": "David",
+            "year": "2023",
+            "journal-title": "Appl. Data Sci. Anal."
+          },
+          {
+            "key": "10.1016/j.dib.2023.109797_bib0016",
+            "series-title": "Make Sense",
+            "author": "Skalski",
+            "year": "2019"
+          }
+        ],
+        "container-title": [
+          "Data in Brief"
+        ],
+        "original-title": [],
+        "language": "en",
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2352340923008594?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S2352340923008594?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2025,
+              11,
+              6
+            ]
+          ],
+          "date-time": "2025-11-06T18:04:53Z",
+          "timestamp": 1762452293000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2352340923008594"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        },
+        "references-count": 16,
+        "alternative-id": [
+          "S2352340923008594"
+        ],
+        "URL": "https://doi.org/10.1016/j.dib.2023.109797",
+        "relation": {
+          "is-supplemented-by": [
+            {
+              "id-type": "uri",
+              "id": "https://data.mendeley.com/datasets/scpvm2nbkm/4",
+              "asserted-by": "subject"
+            }
+          ]
+        },
+        "ISSN": [
+          "2352-3409"
+        ],
+        "issn-type": [
+          {
+            "value": "2352-3409",
+            "type": "print"
+          }
+        ],
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        },
+        "assertion": [
+          {
+            "value": "Elsevier",
+            "name": "publisher",
+            "label": "This article is maintained by"
+          },
+          {
+            "value": "KU-BdSL: An open dataset for Bengali sign language recognition",
+            "name": "articletitle",
+            "label": "Article Title"
+          },
+          {
+            "value": "Data in Brief",
+            "name": "journaltitle",
+            "label": "Journal Title"
+          },
+          {
+            "value": "https://doi.org/10.1016/j.dib.2023.109797",
+            "name": "articlelink",
+            "label": "CrossRef DOI link to publisher maintained version"
+          },
+          {
+            "value": "article",
+            "name": "content_type",
+            "label": "Content Type"
+          },
+          {
+            "value": "\u00a9 2023 The Authors. Published by Elsevier Inc.",
+            "name": "copyright",
+            "label": "Copyright"
+          }
+        ],
+        "article-number": "109797"
+      }
+    }
+  },
+  {
+    "doi": "10.48550/arXiv.1801.04381",
+    "metadata": {
+      "data": {
+        "id": "10.48550/arxiv.1801.04381",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.48550/arxiv.1801.04381",
+          "prefix": "10.48550",
+          "suffix": "arxiv.1801.04381",
+          "identifiers": [
+            {
+              "identifier": "1801.04381",
+              "identifierType": "arXiv"
+            }
+          ],
+          "alternateIdentifiers": [
+            {
+              "alternateIdentifierType": "arXiv",
+              "alternateIdentifier": "1801.04381"
+            }
+          ],
+          "creators": [
+            {
+              "name": "Sandler, Mark",
+              "nameType": "Personal",
+              "givenName": "Mark",
+              "familyName": "Sandler",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Howard, Andrew",
+              "nameType": "Personal",
+              "givenName": "Andrew",
+              "familyName": "Howard",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Zhu, Menglong",
+              "nameType": "Personal",
+              "givenName": "Menglong",
+              "familyName": "Zhu",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Zhmoginov, Andrey",
+              "nameType": "Personal",
+              "givenName": "Andrey",
+              "familyName": "Zhmoginov",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Chen, Liang-Chieh",
+              "nameType": "Personal",
+              "givenName": "Liang-Chieh",
+              "familyName": "Chen",
+              "affiliation": [],
+              "nameIdentifiers": []
+            }
+          ],
+          "titles": [
+            {
+              "title": "MobileNetV2: Inverted Residuals and Linear Bottlenecks"
+            }
+          ],
+          "publisher": "arXiv",
+          "container": {},
+          "publicationYear": 2018,
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "contributors": [],
+          "dates": [
+            {
+              "date": "2018-01-13T04:46:26Z",
+              "dateType": "Submitted",
+              "dateInformation": "v1"
+            },
+            {
+              "date": "2018-01-16T01:03:42Z",
+              "dateType": "Updated",
+              "dateInformation": "v1"
+            },
+            {
+              "date": "2018-01-16T01:59:36Z",
+              "dateType": "Submitted",
+              "dateInformation": "v2"
+            },
+            {
+              "date": "2018-01-17T01:04:02Z",
+              "dateType": "Updated",
+              "dateInformation": "v2"
+            },
+            {
+              "date": "2018-04-02T19:35:28Z",
+              "dateType": "Submitted",
+              "dateInformation": "v3"
+            },
+            {
+              "date": "2018-04-04T00:02:02Z",
+              "dateType": "Updated",
+              "dateInformation": "v3"
+            },
+            {
+              "date": "2019-03-21T19:44:34Z",
+              "dateType": "Submitted",
+              "dateInformation": "v4"
+            },
+            {
+              "date": "2019-03-25T00:02:25Z",
+              "dateType": "Updated",
+              "dateInformation": "v4"
+            },
+            {
+              "date": "2018-01",
+              "dateType": "Available",
+              "dateInformation": "v1"
+            },
+            {
+              "date": "2018",
+              "dateType": "Issued"
+            }
+          ],
+          "language": null,
+          "types": {
+            "ris": "RPRT",
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "schemaOrg": "ScholarlyArticle",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Text"
+          },
+          "relatedIdentifiers": [],
+          "relatedItems": [],
+          "sizes": [],
+          "formats": [],
+          "version": "4",
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "descriptions": [
+            {
+              "description": "In this paper we describe a new mobile architecture, MobileNetV2, that improves the state of the art performance of mobile models on multiple tasks and benchmarks as well as across a spectrum of different model sizes. We also describe efficient ways of applying these mobile models to object detection in a novel framework we call SSDLite. Additionally, we demonstrate how to build mobile semantic segmentation models through a reduced form of DeepLabv3 which we call Mobile DeepLabv3. The MobileNetV2 architecture is based on an inverted residual structure where the input and output of the residual block are thin bottleneck layers opposite to traditional residual models which use expanded representations in the input an MobileNetV2 uses lightweight depthwise convolutions to filter features in the intermediate expansion layer. Additionally, we find that it is important to remove non-linearities in the narrow layers in order to maintain representational power. We demonstrate that this improves performance and provide an intuition that led to this design. Finally, our approach allows decoupling of the input/output domains from the expressiveness of the transformation, which provides a convenient framework for further analysis. We measure our performance on Imagenet classification, COCO object detection, VOC image segmentation. We evaluate the trade-offs between accuracy, and number of operations measured by multiply-adds (MAdd), as well as the number of parameters",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "geoLocations": [],
+          "fundingReferences": [],
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4xODAxLjA0MzgxPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MTgwMS4wNDM4MTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TYW5kbGVyLCBNYXJrPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5NYXJrPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPlNhbmRsZXI8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+SG93YXJkLCBBbmRyZXc8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPkFuZHJldzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Ib3dhcmQ8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+Wmh1LCBNZW5nbG9uZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TWVuZ2xvbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Wmh1PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPlpobW9naW5vdiwgQW5kcmV5PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5BbmRyZXk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Wmhtb2dpbm92PC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkNoZW4sIExpYW5nLUNoaWVoPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5MaWFuZy1DaGllaDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5DaGVuPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5Nb2JpbGVOZXRWMjogSW52ZXJ0ZWQgUmVzaWR1YWxzIGFuZCBMaW5lYXIgQm90dGxlbmVja3M8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+YXJYaXY8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTg8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Db21wdXRlciBWaXNpb24gYW5kIFBhdHRlcm4gUmVjb2duaXRpb24gKGNzLkNWKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMTgtMDEtMTNUMDQ6NDY6MjZaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMTgtMDEtMTZUMDE6MDM6NDJaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAxOC0wMS0xNlQwMTo1OTozNlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MiI+MjAxOC0wMS0xN1QwMTowNDowMlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYzIj4yMDE4LTA0LTAyVDE5OjM1OjI4WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYzIj4yMDE4LTA0LTA0VDAwOjAyOjAyWjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjQiPjIwMTktMDMtMjFUMTk6NDQ6MzRaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjQiPjIwMTktMDMtMjVUMDA6MDI6MjVaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAxOC0wMTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjQ8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5JbiB0aGlzIHBhcGVyIHdlIGRlc2NyaWJlIGEgbmV3IG1vYmlsZSBhcmNoaXRlY3R1cmUsIE1vYmlsZU5ldFYyLCB0aGF0IGltcHJvdmVzIHRoZSBzdGF0ZSBvZiB0aGUgYXJ0IHBlcmZvcm1hbmNlIG9mIG1vYmlsZSBtb2RlbHMgb24gbXVsdGlwbGUgdGFza3MgYW5kIGJlbmNobWFya3MgYXMgd2VsbCBhcyBhY3Jvc3MgYSBzcGVjdHJ1bSBvZiBkaWZmZXJlbnQgbW9kZWwgc2l6ZXMuIFdlIGFsc28gZGVzY3JpYmUgZWZmaWNpZW50IHdheXMgb2YgYXBwbHlpbmcgdGhlc2UgbW9iaWxlIG1vZGVscyB0byBvYmplY3QgZGV0ZWN0aW9uIGluIGEgbm92ZWwgZnJhbWV3b3JrIHdlIGNhbGwgU1NETGl0ZS4gQWRkaXRpb25hbGx5LCB3ZSBkZW1vbnN0cmF0ZSBob3cgdG8gYnVpbGQgbW9iaWxlIHNlbWFudGljIHNlZ21lbnRhdGlvbiBtb2RlbHMgdGhyb3VnaCBhIHJlZHVjZWQgZm9ybSBvZiBEZWVwTGFidjMgd2hpY2ggd2UgY2FsbCBNb2JpbGUgRGVlcExhYnYzLgogIFRoZSBNb2JpbGVOZXRWMiBhcmNoaXRlY3R1cmUgaXMgYmFzZWQgb24gYW4gaW52ZXJ0ZWQgcmVzaWR1YWwgc3RydWN0dXJlIHdoZXJlIHRoZSBpbnB1dCBhbmQgb3V0cHV0IG9mIHRoZSByZXNpZHVhbCBibG9jayBhcmUgdGhpbiBib3R0bGVuZWNrIGxheWVycyBvcHBvc2l0ZSB0byB0cmFkaXRpb25hbCByZXNpZHVhbCBtb2RlbHMgd2hpY2ggdXNlIGV4cGFuZGVkIHJlcHJlc2VudGF0aW9ucyBpbiB0aGUgaW5wdXQgYW4gTW9iaWxlTmV0VjIgdXNlcyBsaWdodHdlaWdodCBkZXB0aHdpc2UgY29udm9sdXRpb25zIHRvIGZpbHRlciBmZWF0dXJlcyBpbiB0aGUgaW50ZXJtZWRpYXRlIGV4cGFuc2lvbiBsYXllci4gQWRkaXRpb25hbGx5LCB3ZSBmaW5kIHRoYXQgaXQgaXMgaW1wb3J0YW50IHRvIHJlbW92ZSBub24tbGluZWFyaXRpZXMgaW4gdGhlIG5hcnJvdyBsYXllcnMgaW4gb3JkZXIgdG8gbWFpbnRhaW4gcmVwcmVzZW50YXRpb25hbCBwb3dlci4gV2UgZGVtb25zdHJhdGUgdGhhdCB0aGlzIGltcHJvdmVzIHBlcmZvcm1hbmNlIGFuZCBwcm92aWRlIGFuIGludHVpdGlvbiB0aGF0IGxlZCB0byB0aGlzIGRlc2lnbi4gRmluYWxseSwgb3VyIGFwcHJvYWNoIGFsbG93cyBkZWNvdXBsaW5nIG9mIHRoZSBpbnB1dC9vdXRwdXQgZG9tYWlucyBmcm9tIHRoZSBleHByZXNzaXZlbmVzcyBvZiB0aGUgdHJhbnNmb3JtYXRpb24sIHdoaWNoIHByb3ZpZGVzIGEgY29udmVuaWVudCBmcmFtZXdvcmsgZm9yIGZ1cnRoZXIgYW5hbHlzaXMuIFdlIG1lYXN1cmUgb3VyIHBlcmZvcm1hbmNlIG9uIEltYWdlbmV0IGNsYXNzaWZpY2F0aW9uLCBDT0NPIG9iamVjdCBkZXRlY3Rpb24sIFZPQyBpbWFnZSBzZWdtZW50YXRpb24uIFdlIGV2YWx1YXRlIHRoZSB0cmFkZS1vZmZzIGJldHdlZW4gYWNjdXJhY3ksIGFuZCBudW1iZXIgb2Ygb3BlcmF0aW9ucyBtZWFzdXJlZCBieSBtdWx0aXBseS1hZGRzIChNQWRkKSwgYXMgd2VsbCBhcyB0aGUgbnVtYmVyIG9mIHBhcmFtZXRlcnM8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+          "url": "https://arxiv.org/abs/1801.04381",
+          "contentUrl": null,
+          "metadataVersion": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "source": "mds",
+          "isActive": true,
+          "state": "findable",
+          "reason": null,
+          "viewCount": 0,
+          "viewsOverTime": [],
+          "downloadCount": 0,
+          "downloadsOverTime": [],
+          "referenceCount": 0,
+          "citationCount": 1,
+          "citationsOverTime": [
+            {
+              "year": "2022",
+              "total": 1
+            }
+          ],
+          "partCount": 0,
+          "partOfCount": 2,
+          "versionCount": 0,
+          "versionOfCount": 0,
+          "created": "2022-03-03T14:43:51.000Z",
+          "registered": "2022-03-03T14:43:52.000Z",
+          "published": "2018",
+          "updated": "2022-03-03T14:43:52.000Z"
+        },
+        "relationships": {
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          },
+          "provider": {
+            "data": {
+              "id": "arxiv",
+              "type": "providers"
+            }
+          },
+          "media": {
+            "data": {
+              "id": "10.48550/arxiv.1801.04381",
+              "type": "media"
+            }
+          },
+          "references": {
+            "data": []
+          },
+          "citations": {
+            "data": [
+              {
+                "id": "10.3389/frai.2022.827299",
+                "type": "dois"
+              }
+            ]
+          },
+          "parts": {
+            "data": []
+          },
+          "partOf": {
+            "data": [
+              {
+                "id": "10.5281/zenodo.17018543",
+                "type": "dois"
+              },
+              {
+                "id": "10.5281/zenodo.17018542",
+                "type": "dois"
+              }
+            ]
+          },
+          "versions": {
+            "data": []
+          },
+          "versionOf": {
+            "data": []
+          }
+        }
+      }
+    }
+  },
+  {
+    "doi": "10.1109/ICCCNT.2017.8204148",
+    "metadata": {
+      "status": "ok",
+      "message-type": "work",
+      "message-version": "1.0.0",
+      "message": {
+        "indexed": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              3
+            ]
+          ],
+          "date-time": "2026-02-03T19:44:36Z",
+          "timestamp": 1770147876599,
+          "version": "3.49.0"
+        },
+        "reference-count": 15,
+        "publisher": "IEEE",
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "short-container-title": [],
+        "published-print": {
+          "date-parts": [
+            [
+              2017,
+              7
+            ]
+          ]
+        },
+        "DOI": "10.1109/icccnt.2017.8204148",
+        "type": "proceedings-article",
+        "created": {
+          "date-parts": [
+            [
+              2017,
+              12,
+              14
+            ]
+          ],
+          "date-time": "2017-12-14T22:12:37Z",
+          "timestamp": 1513289557000
+        },
+        "page": "1-5",
+        "source": "Crossref",
+        "is-referenced-by-count": 3,
+        "title": [
+          "Design, control &amp; performance analysis of forecast junction IoT and swarm robotics based system for natural disaster monitoring"
+        ],
+        "prefix": "10.1109",
+        "author": [
+          {
+            "given": "Fatin Hasnath",
+            "family": "Chowdhury",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Rashik",
+            "family": "Nahian",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Taki",
+            "family": "Uddin",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Sifat",
+            "family": "Rezwan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Monirujjaman",
+            "family": "Khan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Abu",
+            "family": "Sufian",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Nazmul",
+            "family": "Hassan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Jawad",
+            "family": "Ishaque",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Saad Ahmed",
+            "family": "Akash",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Nazia Nawar",
+            "family": "Hassan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "member": "263",
+        "reference": [
+          {
+            "key": "ref10",
+            "author": "akash",
+            "year": "2017",
+            "journal-title": "TeamSpaceSpark"
+          },
+          {
+            "key": "ref11",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/HealthCom.2015.7454553"
+          },
+          {
+            "key": "ref12",
+            "year": "2000",
+            "journal-title": "Patent US6167446 - Automatically configuring network-name-services"
+          },
+          {
+            "key": "ref13",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/TGRS.2007.894928"
+          },
+          {
+            "key": "ref14",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/JPROC.2012.2195469"
+          },
+          {
+            "key": "ref15",
+            "author": "chen",
+            "year": "2013",
+            "journal-title": "Natural Disaster Monitoring with Wireless Sensor Networks A Case Study of Data-intensive Applications upon Low-Cost Scalable Systems"
+          },
+          {
+            "key": "ref4",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IEMCON.2016.7746321"
+          },
+          {
+            "key": "ref3",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1109/IROS.2013.6697160"
+          },
+          {
+            "key": "ref6",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/hyp.1021"
+          },
+          {
+            "key": "ref5",
+            "year": "0",
+            "journal-title": "Distance Measurement Sensor Applications"
+          },
+          {
+            "key": "ref8",
+            "author": "kuang",
+            "year": "2008",
+            "journal-title": "Remote flood monitoring system based on plastic optical fibres and wireless motes"
+          },
+          {
+            "key": "ref7",
+            "doi-asserted-by": "publisher",
+            "DOI": "10.1002/(SICI)1099-1085(199708)11:10<1409::AID-HYP531>3.0.CO;2-V"
+          },
+          {
+            "key": "ref2",
+            "year": "2017",
+            "journal-title": "Global Rural-Urban Mapping Project (GRUMP)"
+          },
+          {
+            "key": "ref1",
+            "year": "2017",
+            "journal-title": "Global Flood Monitoring System (GFMS)"
+          },
+          {
+            "key": "ref9",
+            "year": "2017"
+          }
+        ],
+        "event": {
+          "name": "2017 8th International Conference on Computing, Communication and Networking Technologies (ICCCNT)",
+          "location": "Delhi",
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                7,
+                3
+              ]
+            ]
+          },
+          "end": {
+            "date-parts": [
+              [
+                2017,
+                7,
+                5
+              ]
+            ]
+          }
+        },
+        "container-title": [
+          "2017 8th International Conference on Computing, Communication and Networking Technologies (ICCCNT)"
+        ],
+        "original-title": [],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx7/8123903/8203898/08204148.pdf?arnumber=8204148",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "deposited": {
+          "date-parts": [
+            [
+              2018,
+              1,
+              23
+            ]
+          ],
+          "date-time": "2018-01-23T20:31:27Z",
+          "timestamp": 1516739487000
+        },
+        "score": 1,
+        "resource": {
+          "primary": {
+            "URL": "http://ieeexplore.ieee.org/document/8204148/"
+          }
+        },
+        "subtitle": [],
+        "short-title": [],
+        "issued": {
+          "date-parts": [
+            [
+              2017,
+              7
+            ]
+          ]
+        },
+        "references-count": 15,
+        "URL": "https://doi.org/10.1109/icccnt.2017.8204148",
+        "relation": {},
+        "subject": [],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              7
+            ]
+          ]
+        }
+      }
+    }
+  }
+]

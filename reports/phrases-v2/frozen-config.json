@@ -1,0 +1,26 @@
+{
+  "variant": "pose",
+  "allow_mirror": false,
+  "threshold": 0.08,
+  "margin": 0.1,
+  "known_correct": 1,
+  "known_n": 8,
+  "unknown_rejected": 14,
+  "unknown_n": 14,
+  "balanced_score": 0.5625,
+  "known_accuracy": 0.125,
+  "unknown_rejection": 1.0,
+  "vocabulary": [
+    "হ্যালো",
+    "আপনি কেমন আছেন?",
+    "আমি ভালো আছি",
+    "আপনার নাম কী?"
+  ],
+  "method": "body-normalized pose, reassociated hands, palm-normalized shape and temporal DTW",
+  "template_sha256": "f718c0449917bbca2e8d4823739470e4d52f4fecd882a4fdfeed3bcdd498df2b",
+  "reference_videos": [
+    "grameenphone",
+    "brac"
+  ],
+  "test_selection": "independent footage excluded from all development searches"
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Cite this software and the original non-peer-reviewed preprint separately."
+title: "Bangla Sign Language Detector: reproducible research and captioning prototype"
+type: software
+version: 2.0.0
+authors:
+  - family-names: Hassan
+    given-names: Nazmul
+    orcid: "https://orcid.org/0000-0001-6116-017X"
+repository-code: "https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector"
+license: MIT
+references:
+  - type: unpublished
+    title: "Bangla Sign Language Gesture Recognition System: Using CNN Model"
+    authors:
+      - family-names: Hassan
+        given-names: Nazmul
+    year: 2022
+    doi: "10.14293/S2199-1006.1.SOR-.PPUF56Q.v1"
+    notes: "ScienceOpen preprint, not peer-reviewed; v2 draft in paper/v2 is not yet uploaded."

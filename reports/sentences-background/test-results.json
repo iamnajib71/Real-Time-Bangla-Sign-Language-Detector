@@ -1,0 +1,941 @@
+{
+  "task": "10-class bounded sentence classification with unknown rejection; not unrestricted translation",
+  "split": "U4/U5/U6 train; U7 validation; U19 test (prior baseline outcome observed)",
+  "selected": {
+    "backend": "gru",
+    "threshold": 0.2,
+    "known_n": 10,
+    "known_correct": 9,
+    "known_accuracy": 0.9,
+    "unknown_n": 10,
+    "unknown_rejected": 10,
+    "unknown_rejection": 1.0,
+    "accepted_n": 9,
+    "accepted_precision": 1.0,
+    "balanced_score": 0.95
+  },
+  "test": {
+    "known_n": 10,
+    "known_correct": 6,
+    "known_accuracy": 0.6,
+    "unknown_n": 10,
+    "unknown_rejected": 8,
+    "unknown_rejection": 0.8,
+    "accepted_n": 10,
+    "accepted_precision": 0.6,
+    "balanced_score": 0.7
+  },
+  "predictions": [
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U19_20231019_1697713241685.mp4",
+      "sentence_id": "25803",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "দাদী চা খান না।",
+      "gloss": "দাদি চা না।",
+      "sha256": "19fb3bb2df98dd01d67bba665c6d8d9ee156980596fba0f8a7c40f4b31bc10db",
+      "tracked_frames": 39,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9999521970748901,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U19_20231019_1697713231709.mp4",
+      "sentence_id": "25802",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "দাদা চা খান না।",
+      "gloss": "দাদা চা না।",
+      "sha256": "88549815300e6cb2d3ae4d1c651def8ae04a056bab28bbcd6cc08f0f8b6e3892",
+      "tracked_frames": 38,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.999982476234436,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U19_20230706_1688653207413.mp4",
+      "sentence_id": "12419",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "রাতে খেয়েছেন?",
+      "gloss": "রাত খাওয়ায়া হয়েছে ?",
+      "sha256": "5f4fdbff6f3f53990a8fbcb5e750ec725bf30a990c176fd3e28a645807631f08",
+      "tracked_frames": 42,
+      "predicted": "রাতে খেয়েছেন?",
+      "accepted": true,
+      "score": 0.9996365308761597,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U19_20231106_1699264293766.mp4",
+      "sentence_id": "28754",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "চাচা সকালে মাংস খেতেন না।",
+      "gloss": "চাচা আগে সকাল মাংস খাওয়ায়া না।",
+      "sha256": "a8cbd13a22ac5783ddcafcbaa8f67f729a0466ad74c38883c0354276208319f3",
+      "tracked_frames": 42,
+      "predicted": "চাচা সকালে মাংস খেতেন না।",
+      "accepted": true,
+      "score": 0.8236058354377747,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U19_20231106_1699246074978.mp4",
+      "sentence_id": "28559",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "খালু সকালে কফি খাবে।",
+      "gloss": "খালা জামাই সকাল কফি হবে।",
+      "sha256": "2d1332452f420311388f2a43dd5c070fed06c952223524b59794bde3c6949d97",
+      "tracked_frames": 46,
+      "predicted": "খালু সকালে কফি খাবে।",
+      "accepted": true,
+      "score": 0.9959754347801208,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U19_20231010_1696931429197.mp4",
+      "sentence_id": "23511",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "ফল খাও।",
+      "gloss": "ফল খাওয়া।",
+      "sha256": "5f13d152205645cbf7faa24aea510e794b9269b2b4b5a6eac21b03be903b0dad",
+      "tracked_frames": 39,
+      "predicted": "খালু সকালে কফি খাবে।",
+      "accepted": true,
+      "score": 0.8432449698448181,
+      "correct": false
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U19_20231019_1697713209248.mp4",
+      "sentence_id": "25800",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "বাবা চা খান না।",
+      "gloss": "বাবা চা না।",
+      "sha256": "28cb1f80f2bc24cef1054985e53de371709bb586504aaa3f81894f86c2d64865",
+      "tracked_frames": 36,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9998227953910828,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U19_20231018_1697642413332.mp4",
+      "sentence_id": "25771",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "মা মাংস খান না।",
+      "gloss": "মা মাংস খাওয়ায়া না।",
+      "sha256": "f8f1a67fd6a6bd94d5b1b56d5b88ffb174f745ed2fcf17e8b9e9a7ecbae3ee83",
+      "tracked_frames": 37,
+      "predicted": "চাচা সকালে মাংস খেতেন না।",
+      "accepted": true,
+      "score": 0.5656595826148987,
+      "correct": false
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U19_20231018_1697642767406.mp4",
+      "sentence_id": "25791",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "মা ডাল খান না।",
+      "gloss": "মা ডাল খাওয়ায়া না।",
+      "sha256": "ce7f4b2a0aa2904b34b839f887d8f4b041b1ccb156a06ac3b3938432c601e8ff",
+      "tracked_frames": 38,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9986133575439453,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U19_20231019_1697713294387.mp4",
+      "sentence_id": "25807",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "খালু চা খান না।",
+      "gloss": "খালা জামাই চা না।",
+      "sha256": "bf6fc7c27529d322224a6c5c08e5aeafe508fcecf3fc7ed788b839e4f76a909d",
+      "tracked_frames": 49,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9998706579208374,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U19_20231107_1699334421896.mp4",
+      "sentence_id": "28908",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "বাবা রাতে ডাল খাবে না।",
+      "gloss": "বাবা রাত ডাল খাওয়ায়া হবে না।",
+      "sha256": "e7d4b8c1f72b8fc4ab046a74fc9c33d8e4997e52ca184efbc5a7a93765de7552",
+      "tracked_frames": 41,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9664806127548218,
+      "correct": false
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U19_20231019_1697713281046.mp4",
+      "sentence_id": "25806",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "খালা চা খান না।",
+      "gloss": "খালা চা না।",
+      "sha256": "236dca99919e6fb89d155bb88fd2064b9e813f6d35898a4f1afacb29b12a5dfa",
+      "tracked_frames": 40,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9999582767486572,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U19_20231105_1699174681669.mp4",
+      "sentence_id": "28390",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "দাদী দুপুরে কফি খেতেন।",
+      "gloss": "দাদি আগে দুপুর কফি ছিল।",
+      "sha256": "4b6c6172ebfa15a4e2f366c0c9837b810e5bc2ab0a0c177f9f646d58653c8536",
+      "tracked_frames": 44,
+      "predicted": "দাদী দুপুরে কফি খেতেন।",
+      "accepted": true,
+      "score": 0.9957485795021057,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U19_20231019_1697713342659.mp4",
+      "sentence_id": "25811",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "মা কফি খান না।",
+      "gloss": "মা কফি না।",
+      "sha256": "83840372faefc645f178290d14c8f3cb587c648b3a3b3fdb489f3b5fc215d584",
+      "tracked_frames": 35,
+      "predicted": "খালু সকালে কফি খাবে।",
+      "accepted": true,
+      "score": 0.8937098979949951,
+      "correct": false
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U19_20231019_1697713253050.mp4",
+      "sentence_id": "25804",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "চাচা চা খান না।",
+      "gloss": "চাচা চা না।",
+      "sha256": "4e31c5aff429e39cda8092ebbb27d170077eb4a02da8e1448142bbc70972fd93",
+      "tracked_frames": 38,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9999092817306519,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U19_20231019_1697713265724.mp4",
+      "sentence_id": "25805",
+      "signer": "19",
+      "split": "test",
+      "known": false,
+      "text": "চাচী চা খান না।",
+      "gloss": "চাচা বউ চা না।",
+      "sha256": "ca6a735408b0c5095de87ad65bb5a54f48183831e7aba42e66defceeaa6505ae",
+      "tracked_frames": 46,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9999382495880127,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U19_20231019_1697713220224.mp4",
+      "sentence_id": "25801",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "মা চা খান না।",
+      "gloss": "মা চা না।",
+      "sha256": "4dccb1261de1bea1fba968ea3308cfe2f4e990e30052f67e39aae9c58b70d0ff",
+      "tracked_frames": 36,
+      "predicted": "Unrecognised",
+      "accepted": false,
+      "score": 0.9999639987945557,
+      "correct": false
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U19_20231111_1699679656296.mp4",
+      "sentence_id": "29451",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "চাচী বিকালে শাক-সব্জী খেয়েছিল।",
+      "gloss": "চাচা বউ বিকাল শাক-সব্জী খাওয়ায়া ছিল।",
+      "sha256": "0318a1b63f2204d30b86eea7d5cec411b01d05ca43127d4bf4da6efc5d5ea745",
+      "tracked_frames": 65,
+      "predicted": "রাতে খেয়েছেন?",
+      "accepted": true,
+      "score": 0.905612587928772,
+      "correct": false
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U19_20231105_1699172293412.mp4",
+      "sentence_id": "28341",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "দাদা বিকালে কফি খায়নি।",
+      "gloss": "দাদা বিকাল কফি নেই।",
+      "sha256": "a49283fa3776721b78b8e8e0364120f00f3269f57a1f5c1aa1f6054bc363ea16",
+      "tracked_frames": 41,
+      "predicted": "দাদা বিকালে কফি খায়নি।",
+      "accepted": true,
+      "score": 0.9523283243179321,
+      "correct": true
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U19_20231107_1699334927855.mp4",
+      "sentence_id": "28940",
+      "signer": "19",
+      "split": "test",
+      "known": true,
+      "text": "মা দুপুরে ডাল খায়নি।",
+      "gloss": "মা দুপুর ডাল খাওয়ায়া নেই।",
+      "sha256": "6a4df3b8e7ea6310d4759ef38da09c1c6cab3cd33b3747b4fe4e0518e91b52dc",
+      "tracked_frames": 42,
+      "predicted": "মা দুপুরে ডাল খায়নি।",
+      "accepted": true,
+      "score": 0.9189198613166809,
+      "correct": true
+    }
+  ],
+  "model_sha256": "9b2cd9d6fa8aec87aaa2d48ff722d5b3a2aa1392ae1b7c804e53bf737244f913",
+  "test_disclosure": "U19 is excluded from fitting and validation; a prior conservative baseline test outcome was observed",
+  "tracking_audit": [
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U19_20231019_1697713241685.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U7_20231005_1696485547997.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 37
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U6_20231008_1696770755974.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U4_20231004_1696408909383.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25803/REC_CS_S25803_U5_20231010_1696945693321.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U5_20231010_1696945679043.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U7_20231005_1696485530151.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U4_20231004_1696408896144.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 35
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U6_20231008_1696770735232.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25802/REC_CS_S25802_U19_20231019_1697713231709.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 38
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U19_20230706_1688653207413.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 42
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U5_20230706_1688634660349.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 44
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U7_20230706_1688642541513.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 38
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U4_20230703_1688386782109.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 43
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/12419/UL_CS_S12419_U6_20230704_1688484364886.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 54
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U19_20231106_1699264293766.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 42
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U6_20231026_1698322801184.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 53
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U7_20231023_1698044206312.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 59
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U5_20231023_1698069455959.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 49
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28754/REC_CS_S28754_U4_20231018_1697612385178.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 42
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U7_20231023_1698032714820.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 54
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U4_20231017_1697557481995.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 42
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U19_20231106_1699246074978.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U5_20231023_1698061654851.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28559/REC_CS_S28559_U6_20231025_1698246736600.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 58
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U5_20231010_1696932386108.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U7_20231010_1696938368618.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 35
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U4_20231008_1696764165112.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 27
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U19_20231010_1696931429197.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/23511/UL_CS_S23511_U6_20231009_1696840042267.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 35
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U6_20231008_1696770705049.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U19_20231019_1697713209248.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 36
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U4_20231004_1696408851339.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 33
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U7_20231005_1696485496715.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 38
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25800/REC_CS_S25800_U5_20231010_1696945653331.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U7_20231005_1696484697453.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 48
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U4_20231004_1696405011186.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 36
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U5_20231010_1696945262767.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 40
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U19_20231018_1697642413332.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 37
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25771/REC_CS_S25771_U6_20231008_1696769850097.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U7_20231005_1696485320596.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 37
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U5_20231010_1696945480034.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U4_20231004_1696408636030.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 36
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U6_20231008_1696770488496.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25791/REC_CS_S25791_U19_20231018_1697642767406.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 38
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U7_20231005_1696485630360.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U4_20231004_1696409332148.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U6_20231008_1696770935885.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 53
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U19_20231019_1697713294387.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 49
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25807/REC_CS_S25807_U5_20231010_1696945793416.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U19_20231107_1699334421896.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U4_20231018_1697626983185.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U6_20231030_1698667280669.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 65
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U5_20231025_1698230891501.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 48
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28908/REC_CS_S28908_U7_20231025_1698205098578.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 56
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U5_20231010_1696945757987.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U6_20231008_1696770891280.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 40
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U19_20231019_1697713281046.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 40
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U4_20231004_1696409023180.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 37
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25806/REC_CS_S25806_U7_20231005_1696485604441.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 40
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U5_20231022_1697987629827.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 50
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U6_20231025_1698241191606.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 62
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U4_20231017_1697553286386.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 42
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U19_20231105_1699174681669.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 44
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28390/REC_CS_S28390_U7_20231022_1697954754420.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 53
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U6_20231008_1696771002365.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U5_20231010_1696945857592.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 35
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U4_20231004_1696409471397.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 33
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U7_20231005_1696485725465.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 43
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25811/REC_CS_S25811_U19_20231019_1697713342659.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 35
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U4_20231004_1696408927402.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 34
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U6_20231008_1696770777637.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 43
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U7_20231005_1696485560072.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 37
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U19_20231019_1697713253050.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 38
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25804/REC_CS_S25804_U5_20231010_1696945705671.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U4_20231004_1696408942880.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U5_20231010_1696945720406.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 22
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U7_20231005_1696485578210.mp4",
+      "split": "validation",
+      "known": false,
+      "tracked_frames": 49
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U6_20231008_1696770798475.mp4",
+      "split": "train",
+      "known": false,
+      "tracked_frames": 45
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25805/REC_CS_S25805_U19_20231019_1697713265724.mp4",
+      "split": "test",
+      "known": false,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U4_20231004_1696408883451.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 32
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U6_20231008_1696770719101.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 36
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U19_20231019_1697713220224.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 36
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U5_20231010_1696945665840.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 38
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/25801/REC_CS_S25801_U7_20231005_1696485516522.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U6_20231031_1698735067312.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 83
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U5_20231026_1698311801319.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 75
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U4_20231019_1697702907194.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 79
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U19_20231111_1699679656296.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 65
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/29451/REC_CS_S29451_U7_20231026_1698302712671.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 74
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U6_20231025_1698238999752.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 59
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U7_20231022_1697951217910.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 49
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U4_20231017_1697550174499.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 37
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U19_20231105_1699172293412.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 41
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28341/REC_CS_S28341_U5_20231022_1697986285218.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 47
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U7_20231025_1698207800012.mp4",
+      "split": "validation",
+      "known": true,
+      "tracked_frames": 47
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U5_20231025_1698231581216.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 46
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U19_20231107_1699334927855.mp4",
+      "split": "test",
+      "known": true,
+      "tracked_frames": 42
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U4_20231018_1697629250102.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 39
+    },
+    {
+      "path": "data/external/ban-sign-sent/clips/28940/REC_CS_S28940_U6_20231030_1698668042074.mp4",
+      "split": "train",
+      "known": true,
+      "tracked_frames": 59
+    }
+  ],
+  "limitations": [
+    "Only five dataset user IDs; identities not independently verified",
+    "One clip per class per signer",
+    "Manually segmented complete clips; streaming segmentation not validated",
+    "Dataset card licence not stated; no footage redistributed",
+    "Background sentence types occur in training; rejection does not measure novel unsupported sentence types"
+  ]
+}
