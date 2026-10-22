@@ -192,7 +192,7 @@ class StartingPage(QWidget):
         if path:
             self.stop()
             try: self.show_frame(read_image(path))
-            except ValueError as error: QMessageBox.warning(self,'Input error',str(error))
+            except Exception as error: QMessageBox.warning(self,'Input error',str(error))
 
     def select_video(self):
         path,_=QFileDialog.getOpenFileName(self,'Choose video','','Videos (*.avi *.mp4 *.webm *.mov)')
@@ -213,14 +213,19 @@ class StartingPage(QWidget):
         self.timer.start(100 if self.camera_mode else max(10,round(1000/fps)))
 
     def tick(self):
-        ok,frame=self.capture.read()
-        if ok:
-            self.file_time=None if self.camera_mode else self.frame_index/self.source_fps
-            self.frame_index+=1; self.show_frame(frame)
-        else:
-            if not self.camera_mode and self.mode.currentIndex()>=1 and self.phrase_recognizer is not None and len(self.motion_buffer)>=8:
-                self.suggest_motion()
-            self.stop()
+        try:
+            ok,frame=self.capture.read()
+            if ok:
+                self.file_time=None if self.camera_mode else self.frame_index/self.source_fps
+                self.frame_index+=1; self.show_frame(frame)
+            else:
+                if not self.camera_mode and self.mode.currentIndex()>=1 and self.phrase_recognizer is not None and len(self.motion_buffer)>=8:
+                    self.suggest_motion()
+                self.stop()
+        except Exception as error:
+            self.stop(); self.pending_phrase=''
+            self.status.setText('Input stopped after an error; your transcript is retained.')
+            QMessageBox.warning(self,'Processing error',str(error))
 
     def stop(self):
         self.timer.stop()
@@ -235,7 +240,9 @@ class StartingPage(QWidget):
     def show_overlay(self): self.overlay.show(); self.overlay.raise_()
     def save_text(self):
         path,_=QFileDialog.getSaveFileName(self,'Save transcript','','Text (*.txt)')
-        if path: Path(path).write_text(self.transcript.toPlainText(),encoding='utf-8')
+        if path:
+            try: Path(path).write_text(self.transcript.toPlainText(),encoding='utf-8')
+            except OSError as error: QMessageBox.warning(self,'Could not save transcript',str(error))
 
     def closeEvent(self,event):
         self.stop(); self.overlay.close()

@@ -1,6 +1,6 @@
 """Recorded-file sampling follows media time, independent of GUI playback speed."""
 import numpy as np
-from bsl.gui import QApplication,StartingPage,QFileDialog
+from bsl.gui import QApplication,StartingPage,QFileDialog,QMessageBox
 from pathlib import Path
 
 def test_uploaded_video_uses_media_clock_and_resets_old_phrase(monkeypatch):
@@ -50,4 +50,18 @@ def test_motion_sampling_uses_file_timestamps_when_playback_is_fast():
         window.process_motion(frame)
     assert len(timestamps)==16
     assert timestamps[0]==0 and timestamps[-1]==1900
+    window.close()
+
+def test_decode_failure_retains_transcript_and_stops_input(monkeypatch):
+    app=QApplication.instance() or QApplication([])
+    window=StartingPage(lambda frame:{'label':'আ','confidence':.9})
+    released=[]; warnings=[]
+    class BrokenCapture:
+        def read(self): raise OSError('fixture decoder failure')
+        def release(self): released.append(True)
+    window.capture=BrokenCapture(); window.set_text('সাহায্য করুন'); window.pending_phrase='stale'
+    monkeypatch.setattr(QMessageBox,'warning',lambda *args:warnings.append(args[2]))
+    window.tick()
+    assert window.capture is None and released and warnings
+    assert window.transcript.toPlainText()=='সাহায্য করুন' and window.pending_phrase==''
     window.close()

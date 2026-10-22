@@ -5,6 +5,10 @@ from .predict import Predictor, DEFAULT_MODEL
 from .media import frames
 
 def main(argv=None):
+    argv=list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0]=='doctor':
+        from .doctor import main as doctor
+        return doctor(argv[1:])
     parser = argparse.ArgumentParser(description='Static Bangla sign classifier (crop hands before input)')
     sub = parser.add_subparsers(dest='command', required=True)
     for command in ('predict', 'webcam', 'gui'):
@@ -78,4 +82,4 @@ def main(argv=None):
         parser.exit(2, f'{error}\n')
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
