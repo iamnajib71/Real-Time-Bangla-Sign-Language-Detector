@@ -36,6 +36,7 @@ class StartingPage(QWidget):
         self.timer=QTimer(self); self.timer.timeout.connect(self.tick)
         self.tracker=None; self.phrase_recognizer=None; self.motion_buffer=[]; self.pending_phrase=''
         self.last_motion=0.; self.updating_text=False
+        self.file_time=None; self.next_file_sample=0.; self.frame_index=0; self.source_fps=30.
         self.setWindowTitle('Bangla Sign Language | Caption companion'); self.resize(1120,780)
         self.setStyleSheet('''QWidget{background:#0b1220;color:#edf2f7;font-size:15px}
             QPushButton{background:#1e3348;border:1px solid #36516c;border-radius:7px;padding:10px}
@@ -106,12 +107,20 @@ class StartingPage(QWidget):
         if self.tracker is None or self.phrase_recognizer is None:
             self.result.setText('Teach a personal phrase from a labelled clip to enable suggestions.'); return
         now=time.monotonic()
-        if now-self.last_motion<.125: return
-        self.last_motion=now
-        features,valid=self.tracker.extract(frame,int(now*1000))
+        if self.file_time is not None:
+            if self.file_time+1e-6<self.next_file_sample: return
+            self.next_file_sample+=.125
+            timestamp=int(self.file_time*1000)
+        else:
+            if now-self.last_motion<.125: return
+            self.last_motion=now; timestamp=int(now*1000)
+        features,valid=self.tracker.extract(frame,timestamp)
         if not valid: self.result.setText('No usable upper-body tracking'); return
         self.motion_buffer.append(features); self.motion_buffer=self.motion_buffer[-192:]
         if len(self.motion_buffer)<16: return
+        self.suggest_motion()
+
+    def suggest_motion(self):
         result=self.phrase_recognizer(np.asarray(self.motion_buffer))
         self.pending_phrase=result['label'] if result['accepted'] else ''
         self.result.setText(('Suggestion: '+self.pending_phrase+' - confirm to add') if self.pending_phrase else 'Unrecognised - keep signing or type a correction')
@@ -189,21 +198,33 @@ class StartingPage(QWidget):
 
     def open_capture(self,source):
         self.stop(); self.camera_mode=isinstance(source,int); self.capture=cv2.VideoCapture(source)
+        self.motion_buffer=[]; self.pending_phrase=''; self.frame_index=0; self.next_file_sample=0.
         if not self.capture.isOpened():
             self.stop(); QMessageBox.warning(self,'Input unavailable','Cannot open camera or video. Check the device, permissions and file.'); return
+        if self.tracker is not None:
+            self.tracker.close()
+            from .motion import LandmarkTracker
+            self.tracker=LandmarkTracker(ROOT/'models')
         self.status.setText('Camera running - fit the sign inside the guide.' if self.camera_mode else 'Processing recorded video locally.')
         fps=effective_fps(self.capture.get(cv2.CAP_PROP_FPS))
+        self.source_fps=fps
         self.timer.start(100 if self.camera_mode else max(10,round(1000/fps)))
 
     def tick(self):
         ok,frame=self.capture.read()
-        if ok: self.show_frame(frame)
-        else: self.stop()
+        if ok:
+            self.file_time=None if self.camera_mode else self.frame_index/self.source_fps
+            self.frame_index+=1; self.show_frame(frame)
+        else:
+            if not self.camera_mode and self.mode.currentIndex()>=1 and self.phrase_recognizer is not None and len(self.motion_buffer)>=8:
+                self.suggest_motion()
+            self.stop()
 
     def stop(self):
         self.timer.stop()
         if self.capture is not None: self.capture.release(); self.capture=None
         self.camera_mode=False
+        self.file_time=None
 
     def add_space(self): self.composer.space(); self.set_text(self.composer.text)
     def undo(self): self.composer.backspace(); self.set_text(self.composer.text)
