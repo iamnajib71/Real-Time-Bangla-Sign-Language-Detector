@@ -19,6 +19,20 @@ def test_uploaded_video_uses_media_clock_and_resets_old_phrase(monkeypatch):
     assert window.file_time is None
     window.close()
 
+def test_tracking_loss_clears_a_stale_caption_suggestion():
+    app=QApplication.instance() or QApplication([])
+    window=StartingPage(lambda frame:{'label':'আ','confidence':.9})
+    class Tracker:
+        def extract(self,frame,timestamp): return np.zeros(98,np.float32),False
+        def close(self): pass
+    window.tracker=Tracker()
+    window.phrase_recognizer=lambda sequence:{'label':'stale','accepted':True}
+    window.pending_phrase='stale'; window.file_time=0.
+    window.process_motion(np.zeros((32,32,3),np.uint8))
+    window.confirm_phrase()
+    assert window.pending_phrase=='' and window.transcript.toPlainText()==''
+    window.close()
+
 def test_motion_sampling_uses_file_timestamps_when_playback_is_fast():
     app=QApplication.instance() or QApplication([])
     window=StartingPage(lambda frame:{'label':'আ','confidence':.9})

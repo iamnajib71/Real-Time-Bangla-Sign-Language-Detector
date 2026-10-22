@@ -115,7 +115,9 @@ class StartingPage(QWidget):
             if now-self.last_motion<.125: return
             self.last_motion=now; timestamp=int(now*1000)
         features,valid=self.tracker.extract(frame,timestamp)
-        if not valid: self.result.setText('No usable upper-body tracking'); return
+        if not valid:
+            self.pending_phrase=''
+            self.result.setText('No usable upper-body tracking'); return
         self.motion_buffer.append(features); self.motion_buffer=self.motion_buffer[-192:]
         if len(self.motion_buffer)<16: return
         self.suggest_motion()
