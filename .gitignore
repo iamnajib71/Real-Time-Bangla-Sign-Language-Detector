@@ -5,8 +5,6 @@ __pycache__/
 .idea/
 .env
 .env.*
-CLAUDE.md
-AGENTS.md
 models/*
 !models/README.md
 data/external/
