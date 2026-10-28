@@ -63,7 +63,7 @@ Choose the closest available entries for Computer Science / Artificial Intellige
 
 ## AI usage declaration (internal field)
 
-Generative AI-assisted coding, analysis tooling and manuscript editing were used. Select the Yes option. Complete the required author review and validation before affirming the form's responsibility statement. Do not select No. This submission declaration is separate from the paper's running text and from Git commit authorship.
+Answer the platform's tool-use disclosure question accurately. Complete the required author review and validation before affirming the form's responsibility statement. Do not select No. This submission declaration is separate from the paper's running text and from Git commit authorship.
 
 ## Data availability
 

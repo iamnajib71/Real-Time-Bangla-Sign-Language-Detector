@@ -15,7 +15,6 @@ I built a Bangla hand-sign recognition system for my B.Sc. thesis, with reproduc
 | **Results** | Public KU-BdSL experiment: **99.58% test accuracy on 240 held-out images across 30 grouped classes**. 28 automated tests passed in CPU CI. These are Reproduction results; signer-independent performance is unmeasured. |
 | **Skills shown** | Python, OpenCV, TensorFlow/Keras, CNN, computer vision, PyQt5, reproducible experiments, data analysis, pytest, GitHub Actions. |
 | **Relevant roles** | Junior ML/AI Engineer, Data Analyst, Junior Data Scientist, Software Engineer. |
-| **How it was built** | I designed the workflow, implemented the rebuild and reviewed the measured results; CPU CI checks the shared prediction pipeline. |
 | **Try it / evidence** | [Quick start](#quick-start), [results](docs/RESULTS.md), [complete prediction page](docs/ku-mobilenet-results.html), [raw evidence](reports/), [release](https://github.com/iamnajib71/Real-Time-Bangla-Sign-Language-Detector/releases/tag/v2.0.1). |
 
 The animation is a **30-second slideshow of held-out hand images**, with selected correct and incorrect predictions. It is not a natural-signing video or proof of continuous language translation. [Open the full results page](docs/ku-mobilenet-results.html) locally in a browser to inspect every test example.
