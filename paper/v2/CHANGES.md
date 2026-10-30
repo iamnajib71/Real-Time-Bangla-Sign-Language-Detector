@@ -16,3 +16,5 @@ Every table is generated from reports/*/metrics.json and per_class.csv. paper/v2
 - Patch release: verified the real video-file selection flow, added a media-clock sampling regression test, and added pipeline, validation-history and temporal confusion figures. The original v2.0.0 release/tag remains unchanged.
 
 - Academic presentation: removed draft/revision running labels and author-upload instructions from the manuscript; standardised black clickable citations, punctuated section numbers, descriptive experiment names and numbered figure/table captions. Added a separate copy-ready ScienceOpen revision guide. All numerical evidence and the original v1 are unchanged.
+
+- Editorial screening revision: added the verified North South University ROR (05wdbfp45) and research department; expanded the cited literature from 4 to 14 sources with one self-reference, covering task distinctions, Bangla datasets, temporal models and Deaf-user-centred validation. Added a point-by-point response and a marked comparison against the preserved prior submission. Experimental measurements, split manifests, model files and original v1 are unchanged.

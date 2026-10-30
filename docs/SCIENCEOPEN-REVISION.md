@@ -21,11 +21,12 @@ Preserve the author list of the existing preprint. For Nazmul's entry:
 - Given name: Nazmul
 - Surname: Hassan
 - ORCID: https://orcid.org/0000-0001-6116-017X
-- Affiliation: North South University, Dhaka, Bangladesh
+- Affiliation: Department of Electrical and Computer Engineering, North South University, Dhaka, Bangladesh
+- ROR: https://ror.org/05wdbfp45
 - Corresponding author email: iam.najib@yahoo.com
 - Language: English
 
-Use ScienceOpen's institutional lookup for the ROR identifier. Add a department only if it accurately reflects the research affiliation; do not infer a current appointment from the thesis affiliation.
+Affiliation: Department of Electrical and Computer Engineering, North South University, Dhaka, Bangladesh (research affiliation from the original thesis). ROR: **https://ror.org/05wdbfp45**. If the field accepts only the identifier, enter **05wdbfp45**. Use the university record for ROR; ORCID identifies the author, not the institution. The official record is saved in `docs/editorial-sources.json`. This does not assert a current university appointment.
 
 ## Abstract (163 words; matches the PDF)
 
@@ -33,16 +34,9 @@ This study evaluates static Bangla hand-sign classification and exploratory reco
 
 ## Revision notes (public; paste the following)
 
-1. Clarified the implemented CNN architecture and documented differences between the surviving code and the original method description. The original preprint remains unchanged and citable.
-2. Added fixed train/validation/test partitions, a recorded random seed, duplicate and label-conflict audits, pinned dependencies, model checksums and prediction-level evidence.
-3. Added new measurements on the historical dataset: 3.38% test accuracy for the reconstructed CNN and 52.70% for frozen MobileNetV2 on the same 148-image test split. These measurements are separate from the original preprint's accuracy statements.
-4. Added a separate KU-BdSL USLD experiment, with 99.58% accuracy on 240 test images. Its different collection and grouped label space are explicitly distinguished from the historical task; the split is image-level, not a verified unseen-signer evaluation.
-5. Added per-class metrics, numbered confusion matrices, validation curves, a pipeline diagram and correct/incorrect examples.
-6. Added an exploratory ten-sentence temporal classifier: 6/10 supported test captions correct and 8/10 background clips rejected. The manuscript discloses the earlier observation of this test signer, background-type overlap and incorrect captions in tutorial-video integration checks.
-7. Added recorded-video and camera interfaces, software tests, and code/model availability links. Clarified data permissions, consent limitations, accessibility evaluation needs and the scope of the recognition claims.
-8. Revised the abstract and academic presentation, removed obsolete unsupported performance wording, and standardised headings, table/figure captions and citation formatting.
+Thank you for the editorial screening comments. The affiliation now includes North South University's verified ROR identifier, https://ror.org/05wdbfp45. Section 2 has been expanded to cover recognition versus continuous signing and translation, Bangla datasets and recent temporal models, and representation and accessibility considerations. The bibliography has increased from 4 to 14 references, with one self-reference. The added sources have verified DOIs; arXiv sources are labelled as preprints. The review distinguishes task definitions, data and evaluation protocols and avoids direct accuracy rankings across incompatible studies. Otsu preprocessing and MediaPipe hand tracking now have explicit methodological citations. The measured results, data partitions, model weights and predictions remain unchanged. A clean manuscript and a marked comparison with the previously prepared submission are included. The original preprint remains preserved unchanged.
 
-These are author-initiated revisions; no formal reviewer or editor comments were supplied for this revision.
+The complete point-by-point response is in `paper/v2/RESPONSE-TO-EDITOR.md`.
 
 ## Keywords (one per line; maximum 10)
 
@@ -75,14 +69,24 @@ Code, split manifests, model metadata, per-class metrics and prediction-level ou
 
 Enter only a confirmed grant or funding body. No verified funding information has been supplied; leave this optional field blank unless the author can confirm it. Do not invent a grant or a no-funding declaration.
 
-## Reference DOIs (one per line)
+## Reference DOIs (one per line; manuscript order)
 
+10.1145/3308561.3353774
 10.14293/S2199-1006.1.SOR-.PPUF56Q.v1
+10.1109/cvpr.2018.00812
+10.1109/cvpr42600.2020.01004
+10.1016/j.ipm.2024.103774
 10.1016/j.dib.2023.109797
 10.17632/scpvm2nbkm.4
+10.48550/arxiv.2408.10518
+10.48550/arxiv.2503.02360
+10.1038/s41598-025-30856-y
+10.1109/iccit68739.2025.11491213
 10.48550/arXiv.1801.04381
+10.48550/arxiv.2006.10214
+10.1109/tsmc.1979.4310076
 
-These match the four references in the manuscript. Remove the unrelated example DOI entries already visible in the pasted form.
+These match all 14 references in the revised manuscript. Replace the old reference metadata list in the form; do not retain unrelated example DOIs.
 
 ## Thumbnail
 
@@ -90,7 +94,9 @@ Upload `assets/scienceopen-thumbnail.png`, a dedicated 1536 x 1024 PNG cover. Th
 
 ## PDF for tracked changes
 
-Upload `paper/v2/tracked-changes.pdf` in this field (19 pages, approximately 1.62 MB; below the 10 MB limit). Part A reproduces the revised manuscript with added/replaced text underlined in blue; Part B reproduces the original with removed/replaced text struck through in red. The cover explains that this is an automated PDF-text comparison, including extraction and reordering limitations. Figures remain visible in each version; their pixels are not diffed. Markup is embedded in page content for reliable previews. The original and clean revised PDFs are unchanged. Source checksums and comparison details are in `paper/v2/tracked-changes.json`; `scripts/build_tracked_changes.py` rebuilds the comparison using PyMuPDF. Upload the clean `paper/v2/main.pdf` in the main Content field.
+Upload `paper/v2/tracked-changes.pdf` (21 pages, approximately 0.59 MB, below the 10 MB limit). It compares the revised paper with the previously prepared 10-page submission preserved at `paper/submissions/initial-revision/main.pdf`. Confirm that baseline matches the file you uploaded. Blue underlining marks additions and red strikethrough marks removals; the markup is embedded in page content. Source checksums and the baseline path are in `paper/v2/tracked-changes.json`. The cover explains PDF text extraction limitations; graphics remain visible in each version but are not compared pixel by pixel. The original ScienceOpen v1 remains unchanged in `paper/v1/`. Use the clean `paper/v2/main.pdf` in the main Content field.
+
+Rebuild the comparison with `python scripts/build_tracked_changes.py --baseline paper/submissions/initial-revision/main.pdf --baseline-label "Previously prepared ScienceOpen submission, before the editorial ROR and literature request"` (requires PyMuPDF).
 
 ## Submission declarations
 
@@ -99,3 +105,9 @@ Review these personally. Because this is an existing preprint revision, the stat
 ## Rebuilding the professional manuscript
 
 After running any report-driven manuscript generators, run `python scripts/polish_manuscript.py` last. Compile `paper/v2/main.tex` using Tectonic or upload its self-contained source folder to Overleaf. Run `python scripts/verify_publication.py` to compare manuscript values against the saved model outputs. This edit changes presentation and wording, not model predictions or the original v1 document.
+
+## Resubmission following the editorial email
+
+Log in to ScienceOpen, open the existing article and choose **Resubmit**, as directed in the email. Update the affiliation ROR field, upload the clean and marked PDFs to their respective fields, and replace the reference DOI list. Paste the updated revision notes or the point-by-point response. The title and abstract remain unchanged. This package prepares a resubmission; no ScienceOpen upload or metadata edit has been performed automatically, and peer review has not been claimed complete.
+
+The post-screening `paper/v2/main.tex` is the authoritative manuscript source. Earlier report-driven generators predate this literature revision; do not overwrite the expanded review with their older template. The source folder remains self-contained for Overleaf. `scripts/polish_manuscript.py` preserves the editorial version when its verified ROR and expanded bibliography are present.

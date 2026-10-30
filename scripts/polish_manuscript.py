@@ -8,6 +8,14 @@ import re
 
 def polish(path):
     text = path.read_text(encoding="utf-8")
+    if r'\bibitem{bdslw401}' in text and 'https://ror.org/05wdbfp45' in text:
+        # The editorial revision already has the final house style. Preserve
+        # its expanded literature and reviewed affiliation rather than
+        # replaying wording replacements written for the earlier draft.
+        assert r'\hypersetup{hidelinks' in text
+        assert r'\@seccntformat' in text
+        print('Preserved final editorial manuscript style, literature and ROR affiliation')
+        return
     text = text.replace(r"\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}",
                         r"\hypersetup{hidelinks,pdftitle={Bangla Sign Language Gesture Recognition},pdfauthor={Nazmul Hassan}}")
     text = re.sub(r"\\pagestyle\{fancy\}.*?\\fancyfoot\[C\]\{\\thepage\}",

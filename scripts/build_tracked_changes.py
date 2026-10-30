@@ -48,18 +48,18 @@ def mark(doc, records, selected, addition):
     return len(spans)
 
 
-def cover(doc):
+def cover(doc, original_label, new_pages, old_pages):
     page = doc.new_page(width=595.28, height=841.89)
     page.insert_text((54, 76), "Manuscript revision comparison", fontsize=21, fontname="hebo")
     page.insert_textbox(fitz.Rect(54, 100, 541, 170),
         "Bangla Sign Language Gesture Recognition\nNazmul Hassan",
         fontsize=13, fontname="helv", lineheight=1.5)
     blocks = [
-        ("Comparison", "Preserved ScienceOpen version 1 compared with the clean revised manuscript. This file is for the tracked-changes upload field; the clean revised manuscript belongs in the main content field."),
+        ("Comparison", original_label + " compared with the clean revised manuscript. This file is for the tracked-changes upload field; the clean revised manuscript belongs in the main content field."),
         ("How to read the markup", "Part A contains the revised manuscript. Blue underlining marks added or replaced words. Part B contains the original manuscript. Red strikethrough marks removed or replaced words. Unmarked text matched between versions. Page numbers within each part belong to that source manuscript."),
         ("Scope of the comparison", "The revision substantially rewrites and extends the original text, so extensive markup is expected. This is an automated comparison of text extracted from the two PDFs, not a native word-processor change log. Reordered text, line-end hyphenation and extraction differences can appear as removal plus addition. Figures and tables remain visible in their respective versions; graphical content is not compared pixel by pixel."),
         ("Document integrity", "The source PDFs are unchanged. The comparison preserves the original claims for inspection and does not treat them as results of the additional experiments. A separate revision summary is supplied in the ScienceOpen submission guide."),
-        ("Contents", "Part A: revised manuscript, 10 pages\nPart B: original ScienceOpen preprint, 8 pages\nOriginal DOI: 10.14293/S2199-1006.1.SOR-.PPUF56Q.v1"),
+        ("Contents", f"Part A: revised manuscript, {new_pages} pages\nPart B: comparison baseline, {old_pages} pages\nOriginal DOI lineage: 10.14293/S2199-1006.1.SOR-.PPUF56Q.v1"),
     ]
     y = 185
     for title, body in blocks:
@@ -76,8 +76,11 @@ def cover(doc):
     page.draw_line((339, 156), (443, 156), color=(.8, .05, .05), width=1.2)
 
 
-def main(root):
-    paths = [root / "paper/v1/preprint.pdf", root / "paper/v2/main.pdf"]
+def main(root, baseline=None, original_label="Preserved ScienceOpen version 1"):
+    if baseline is None and (root / 'paper/submissions/initial-revision/main.pdf').exists():
+        baseline=Path('paper/submissions/initial-revision/main.pdf')
+        original_label='Previously prepared ScienceOpen submission, before the editorial ROR and literature request'
+    paths = [root / (baseline or "paper/v1/preprint.pdf"), root / "paper/v2/main.pdf"]
     digests = [hashlib.sha256(p.read_bytes()).hexdigest() for p in paths]
     old, new = [fitz.open(p) for p in paths]
     old_words, new_words = inventory(old), inventory(new)
@@ -89,11 +92,11 @@ def main(root):
     old_spans = mark(old, old_words, deleted, False)
     new_spans = mark(new, new_words, added, True)
     out = fitz.open()
-    cover(out)
+    cover(out, original_label, len(new), len(old))
     out.insert_pdf(new, annots=True, links=True)
     out.insert_pdf(old, annots=True, links=True)
-    out.set_toc([[1, "Comparison guide", 1], [1, "Part A - revised manuscript with additions", 2], [1, "Part B - original manuscript with removals", 2 + len(new)]])
-    out.set_metadata({"title": "Bangla Sign Language Gesture Recognition - tracked changes", "author": "Nazmul Hassan", "subject": "Text comparison of preserved v1 and revised manuscript"})
+    out.set_toc([[1, "Comparison guide", 1], [1, "Part A - revised manuscript with additions", 2], [1, "Part B - comparison baseline with removals", 2 + len(new)]])
+    out.set_metadata({"title": "Bangla Sign Language Gesture Recognition - tracked changes", "author": "Nazmul Hassan", "subject": "Text comparison: " + original_label + " and revised manuscript"})
     assert sum(1 for p in out for _ in p.annots()) == old_spans + new_spans
     # Embed markup in page content so upload previews cannot hide it.
     out.bake(annots=True, widgets=False)
@@ -105,7 +108,8 @@ def main(root):
     annotations = sum(1 for p in check for _ in p.annots())
     assert len(check) == 1 + len(old) + len(new)
     assert annotations == 0
-    record = {"original_sha256": digests[0], "revised_sha256": digests[1],
+    record = {"baseline_path": str(paths[0].relative_to(root)).replace('\\','/'), "baseline_label": original_label,
+              "original_sha256": digests[0], "revised_sha256": digests[1],
               "comparison_sha256": hashlib.sha256(target.read_bytes()).hexdigest(),
               "pages": len(check), "bytes": target.stat().st_size,
               "added_words": len(added), "deleted_words": len(deleted),
@@ -117,5 +121,10 @@ def main(root):
 
 
 if __name__ == "__main__":
-    import sys
-    main(Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[1])
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('root',type=Path,nargs='?',default=Path(__file__).resolve().parents[1])
+    parser.add_argument('--baseline',type=Path)
+    parser.add_argument('--baseline-label',default='Preserved ScienceOpen version 1')
+    args=parser.parse_args()
+    main(args.root,args.baseline,args.baseline_label)

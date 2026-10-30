@@ -1,0 +1,9 @@
+{
+  "description": "Previously prepared manuscript used as baseline for the ROR/literature editorial revision; confirm this is the file actually uploaded to ScienceOpen.",
+  "source_commit": "5996d47",
+  "main_pdf_sha256": "596fedcbf0d234e49892cdf120afe3bb094b8fe607a92b4d49f492764362a09a",
+  "main_tex_sha256": "f6bb99f83ffcc31a8b9b4f52df93d5638633903f6fc0b0fd257eb4df9e098a40",
+  "original_preprint": "paper/v1/preprint.pdf",
+  "new_manuscript": "paper/v2/main.pdf",
+  "comparison": "paper/v2/tracked-changes.pdf"
+}

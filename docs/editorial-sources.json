@@ -1,0 +1,811 @@
+{
+  "ror": {
+    "admin": {
+      "created": {
+        "date": "2018-11-14",
+        "schema_version": "1.0"
+      },
+      "last_modified": {
+        "date": "2026-09-22",
+        "schema_version": "2.1"
+      }
+    },
+    "domains": [
+      "northsouth.edu"
+    ],
+    "established": 1992,
+    "external_ids": [
+      {
+        "all": [
+          "501100019782"
+        ],
+        "preferred": "501100019782",
+        "type": "fundref"
+      },
+      {
+        "all": [
+          "grid.443020.1"
+        ],
+        "preferred": "grid.443020.1",
+        "type": "grid"
+      },
+      {
+        "all": [
+          "0000 0001 2295 3329"
+        ],
+        "preferred": null,
+        "type": "isni"
+      },
+      {
+        "all": [
+          "Q7056796"
+        ],
+        "preferred": null,
+        "type": "wikidata"
+      }
+    ],
+    "id": "https://ror.org/05wdbfp45",
+    "links": [
+      {
+        "type": "website",
+        "value": "https://www.northsouth.edu/"
+      },
+      {
+        "type": "wikipedia",
+        "value": "https://en.wikipedia.org/wiki/North_South_University"
+      }
+    ],
+    "locations": [
+      {
+        "geonames_details": {
+          "continent_code": "AS",
+          "continent_name": "Asia",
+          "country_code": "BD",
+          "country_name": "Bangladesh",
+          "country_subdivision_code": "C",
+          "country_subdivision_name": "Dhaka Division",
+          "lat": 23.7104,
+          "lng": 90.40744,
+          "name": "Dhaka"
+        },
+        "geonames_id": 1185241
+      }
+    ],
+    "names": [
+      {
+        "lang": null,
+        "types": [
+          "acronym"
+        ],
+        "value": "NSU"
+      },
+      {
+        "lang": "en",
+        "types": [
+          "ror_display",
+          "label"
+        ],
+        "value": "North South University"
+      },
+      {
+        "lang": "bn",
+        "types": [
+          "label"
+        ],
+        "value": "নর্থ সাউথ বিশ্ববিদ্যালয়"
+      }
+    ],
+    "relationships": [],
+    "status": "active",
+    "types": [
+      "education",
+      "funder"
+    ]
+  },
+  "reference_count": 14,
+  "self_references": 1,
+  "new_references": {
+    "bragg": {
+      "doi": "10.1145/3308561.3353774",
+      "title": "Sign Language Recognition, Generation, and Translation",
+      "authors": [
+        {
+          "given": "Danielle",
+          "family": "Bragg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Microsoft Research, Cambridge, MA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Koller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Munich, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mary",
+          "family": "Bellard",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft, Redmond, WA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Larwan",
+          "family": "Berke",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Rochester Institute of Technology, Rochester, NY, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrick",
+          "family": "Boudreault",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gallaudet University, Washington, DC, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Annelies",
+          "family": "Braffort",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Paris-Saclay University, Orsay, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Naomi",
+          "family": "Caselli",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Boston University, Boston, MA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Matt",
+          "family": "Huenerfauth",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Rochester Institute of Technology, Rochester, NY, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hernisa",
+          "family": "Kacorri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Maryland, College Park, MD, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tessa",
+          "family": "Verhoef",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Leiden University, Leiden, Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Vogler",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Gallaudet University, Washington, DC, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Meredith",
+          "family": "Ringel Morris",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Microsoft Research, Redmond, WA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1145/3308561.3353774",
+      "content_source": "https://arxiv.org/abs/1908.08597",
+      "status": "published work",
+      "use": "Interdisciplinary and Deaf-user-centred evaluation; no numerical performance claims."
+    },
+    "nsl2018": {
+      "doi": "10.1109/cvpr.2018.00812",
+      "title": "Neural Sign Language Translation",
+      "authors": [
+        {
+          "given": "Necati Cihan",
+          "family": "Camgoz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simon",
+          "family": "Hadfield",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Koller",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Hermann",
+          "family": "Ney",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Bowden",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1109/cvpr.2018.00812",
+      "content_source": "https://openaccess.thecvf.com/content_cvpr_2018/html/Camgoz_Neural_Sign_Language_CVPR_2018_paper.html",
+      "status": "published work",
+      "use": "Sequence-to-sequence translation and grammatical distinctions; no imported benchmark score."
+    },
+    "slt2020": {
+      "doi": "10.1109/cvpr42600.2020.01004",
+      "title": "Sign Language Transformers: Joint End-to-End Sign Language Recognition and Translation",
+      "authors": [
+        {
+          "given": "Necati",
+          "family": "Cihan Camgoz",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Koller",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simon",
+          "family": "Hadfield",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Richard",
+          "family": "Bowden",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1109/cvpr42600.2020.01004",
+      "content_source": "https://openaccess.thecvf.com/content_CVPR_2020/html/Camgoz_Sign_Language_Transformers_Joint_End-to-End_Sign_Language_Recognition_and_Translation_CVPR_2020_paper.html",
+      "status": "published work",
+      "use": "Joint recognition/translation with CTC; DOI checked against matching title."
+    },
+    "survey": {
+      "doi": "10.1016/j.ipm.2024.103774",
+      "title": "Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects",
+      "authors": [
+        {
+          "given": "Sarah",
+          "family": "Alyami",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7944-5093",
+          "authenticated-orcid": false,
+          "given": "Hamzah",
+          "family": "Luqman",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1058-0996",
+          "authenticated-orcid": false,
+          "given": "Mohammad",
+          "family": "Hammoudeh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1016/j.ipm.2024.103774",
+      "content_source": "https://www.sciencedirect.com/science/article/abs/pii/S0306457324001341",
+      "status": "published work",
+      "use": "Continuous-recognition taxonomy; publisher abstract and Crossref metadata checked."
+    },
+    "lipi": {
+      "doi": "10.48550/arxiv.2408.10518",
+      "title": "BAUST Lipi: A BdSL Dataset with Deep Learning Based Bangla Sign Language Recognition",
+      "authors": [
+        {
+          "name": "Hadiuzzaman, Md",
+          "nameType": "Personal",
+          "givenName": "Md",
+          "familyName": "Hadiuzzaman",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Ali, Mohammed Sowket",
+          "nameType": "Personal",
+          "givenName": "Mohammed Sowket",
+          "familyName": "Ali",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Sultana, Tamanna",
+          "nameType": "Personal",
+          "givenName": "Tamanna",
+          "familyName": "Sultana",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Shafi, Abdur Raj",
+          "nameType": "Personal",
+          "givenName": "Abdur Raj",
+          "familyName": "Shafi",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Miah, Abu Saleh Musa",
+          "nameType": "Personal",
+          "givenName": "Abu Saleh Musa",
+          "familyName": "Miah",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Shin, Jungpil",
+          "nameType": "Personal",
+          "givenName": "Jungpil",
+          "familyName": "Shin",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "metadata_url": "https://api.datacite.org/dois/10.48550/arxiv.2408.10518",
+      "content_source": "https://arxiv.org/abs/2408.10518",
+      "status": "arXiv preprint",
+      "use": "Alphabet image collection and hybrid classifier; author abstract checked, not experimentally reproduced."
+    },
+    "bdslw401": {
+      "doi": "10.48550/arxiv.2503.02360",
+      "title": "BdSLW401: Transformer-Based Word-Level Bangla Sign Language Recognition Using Relative Quantization Encoding (RQE)",
+      "authors": [
+        {
+          "name": "Rubaiyeat, Husne Ara",
+          "nameType": "Personal",
+          "givenName": "Husne Ara",
+          "familyName": "Rubaiyeat",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Youssouf, Njayou",
+          "nameType": "Personal",
+          "givenName": "Njayou",
+          "familyName": "Youssouf",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Hasan, Md Kamrul",
+          "nameType": "Personal",
+          "givenName": "Md Kamrul",
+          "familyName": "Hasan",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Mahmud, Hasan",
+          "nameType": "Personal",
+          "givenName": "Hasan",
+          "familyName": "Mahmud",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "metadata_url": "https://api.datacite.org/dois/10.48550/arxiv.2503.02360",
+      "content_source": "https://arxiv.org/html/2503.02360v1",
+      "status": "arXiv preprint",
+      "use": "Multi-view word-level data and relative landmark encoding; author full-text HTML checked."
+    },
+    "dhrubo": {
+      "doi": "10.1038/s41598-025-30856-y",
+      "title": "Transformer based sign-to-text translation for Bangladeshi sign language",
+      "authors": [
+        {
+          "given": "Tahsinul Haque",
+          "family": "Dhrubo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Md. Tanzim",
+          "family": "Reza",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sihab",
+          "family": "Sahariar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wasif Afnan",
+          "family": "Mukto",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1038/s41598-025-30856-y",
+      "content_source": "https://www.nature.com/articles/s41598-025-30856-y.pdf",
+      "status": "published work",
+      "use": "102 isolated-word landmark Transformer; publisher full PDF scope and limitations checked. Issue year 2026, online publication 2025."
+    },
+    "sentence2025": {
+      "doi": "10.1109/iccit68739.2025.11491213",
+      "title": "From Gesture to Sentence: A Sentence-Level Translation Framework for Bangla Sign Language",
+      "authors": [
+        {
+          "given": "Ananna Dev",
+          "family": "Aishi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Chittagong,Department of Electrical and Electronic Engineering,Chittagong,Bangladesh,4331"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Aonmoy",
+          "family": "Das",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Chittagong,Department of Electrical and Electronic Engineering,Chittagong,Bangladesh,4331"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Md Fazlul",
+          "family": "Kader",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of Chittagong,Department of Electrical and Electronic Engineering,Chittagong,Bangladesh,4331"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1109/iccit68739.2025.11491213",
+      "content_source": "https://ieeexplore.ieee.org/abstract/document/11491213",
+      "status": "published work",
+      "use": "Constrained 30-word/10-sentence framework from publisher abstract; detailed experimental protocol not independently reproduced."
+    },
+    "hands": {
+      "doi": "10.48550/arxiv.2006.10214",
+      "title": "MediaPipe Hands: On-device Real-time Hand Tracking",
+      "authors": [
+        {
+          "name": "Zhang, Fan",
+          "nameType": "Personal",
+          "givenName": "Fan",
+          "familyName": "Zhang",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Bazarevsky, Valentin",
+          "nameType": "Personal",
+          "givenName": "Valentin",
+          "familyName": "Bazarevsky",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Vakunov, Andrey",
+          "nameType": "Personal",
+          "givenName": "Andrey",
+          "familyName": "Vakunov",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Tkachenka, Andrei",
+          "nameType": "Personal",
+          "givenName": "Andrei",
+          "familyName": "Tkachenka",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Sung, George",
+          "nameType": "Personal",
+          "givenName": "George",
+          "familyName": "Sung",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Chang, Chuo-Ling",
+          "nameType": "Personal",
+          "givenName": "Chuo-Ling",
+          "familyName": "Chang",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Grundmann, Matthias",
+          "nameType": "Personal",
+          "givenName": "Matthias",
+          "familyName": "Grundmann",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "metadata_url": "https://api.datacite.org/dois/10.48550/arxiv.2006.10214",
+      "content_source": "https://arxiv.org/abs/2006.10214",
+      "status": "arXiv preprint",
+      "use": "RGB hand-landmark tracking; no claim that tracking establishes recognition accuracy."
+    },
+    "otsu": {
+      "doi": "10.1109/tsmc.1979.4310076",
+      "title": "A Threshold Selection Method from Gray-Level Histograms",
+      "authors": [
+        {
+          "given": "Nobuyuki",
+          "family": "Otsu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "metadata_url": "https://api.crossref.org/works/10.1109/tsmc.1979.4310076",
+      "content_source": "https://doi.org/10.1109/TSMC.1979.4310076",
+      "status": "published work",
+      "use": "Preprocessing attribution; bibliographic title and DOI checked."
+    }
+  },
+  "citation_order": [
+    "bragg",
+    "hassan",
+    "nsl2018",
+    "slt2020",
+    "survey",
+    "kubdsl",
+    "kudata",
+    "lipi",
+    "bdslw401",
+    "dhrubo",
+    "sentence2025",
+    "mobilenet",
+    "hands",
+    "otsu"
+  ],
+  "existing_reference_evidence": "docs/verified-citations.json",
+  "note": "No source accuracy is used as a comparable baseline; this editorial revision changes no model output."
+}
